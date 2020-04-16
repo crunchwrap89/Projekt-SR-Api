@@ -2,3 +2,22 @@
     font-family: "Arial", Times, serif;
     background-color: skyblue;
 }
+element {
+    height: 40px;
+    width: 66%;
+}
+video {
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+}
+video {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    max-width: 100%;
+    max-height: 100%;
+    user-select: none;
+    -moz-user-focus: normal;
+}
