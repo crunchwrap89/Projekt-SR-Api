@@ -16,3 +16,10 @@ knapp4.addEventListener('click', () => {
  // metod att starta här
 })
   
+
+async function playRadioChannel() {
+  
+}
+async function pauseRadioChannel() {
+
+}
