@@ -1,6 +1,7 @@
-.body {
+body {
     font-family: "Arial", Times, serif;
     background-color: skyblue;
+    text-align: center;
 }
 element {
     height: 40px;
