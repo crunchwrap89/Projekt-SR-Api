@@ -7,10 +7,10 @@ element {
     height: 40px;
     width: 66%;
 }
-video {
+audio {
     box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
-video {
+audio {
     position: absolute;
     top: 0;
     right: 0;
