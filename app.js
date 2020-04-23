@@ -1,4 +1,4 @@
-import eventknappar from './components/eventknappar.js'
+import eventknappar from './components/EventKnappar.js'
 
  fetch("http://api.sr.se/api/v2/programs?format=json")
 
