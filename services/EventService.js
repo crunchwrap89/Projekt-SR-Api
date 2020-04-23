@@ -8,7 +8,7 @@ function getRadioChannel(url) {
 
             return resp.json()
         })
-        .then(json => json.liveaudo.url)
+        .then(json => json.channel.liveaudio.url)
 }
 
 export default {
