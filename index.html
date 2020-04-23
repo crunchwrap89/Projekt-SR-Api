@@ -9,12 +9,16 @@
         <script type="module" src="app.js"></script>
     </head>
     <body>
+<<<<<<< HEAD
         <audio src="http://sverigesradio.se/topsy/direkt/132-hi.mp3" autoplay="" controls="" style="height: 40px; width: 66%;"></audio>
 
+=======
+        <audio id="spelare" src="http://sverigesradio.se/topsy/direkt/132-hi.mp3" autoplay="" controls="" style="height: 40px; width: 66%;"></audio>
+>>>>>>> db773ef3cf902ad836df87c02d28baa872aa2dd9
         
         <div id="app"> 
             <toast :text="errorText"></toast>
-            <action-bar @fortune="addFortune" @error="handleError"></action-bar>
+            <action-bar></action-bar>
         </div>
 
 

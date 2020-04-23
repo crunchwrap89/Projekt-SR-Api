@@ -22,10 +22,10 @@ export default {
     },
     template: `<div style="width: fit-content; display: flex; flex-direction: column; align-items:center;">
                 <div style="margin-bottom: 0.2em;">
-                    <input type="button" @click="playP1" value="P1">
-                    <input type="button" @click="playP2" value="P2">
-                    <input type="button" @click="playP3" value="P3">
-                    <input type="button" @click="playP4" value="P4">
+                    <input type="button" @click="playP1" value="Radio P1">
+                    <input type="button" @click="playP2" value="Radio P2">
+                    <input type="button" @click="playP3" value="Radio P3">
+                    <input type="button" @click="playP4" value="Radio P4">
                 </div>
                </div>`
 }
