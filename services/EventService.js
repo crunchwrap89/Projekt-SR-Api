@@ -1,7 +1,14 @@
 
 function getRadioChannel(url) {
     fetch(url)
-        .then(resp)
+        .then(resp =>  {
+            if (!resp.ok) {
+                throw new Error(resp.statusText)
+            }
+
+            return resp.json()
+        })
+        .then(json => json.liveaudo.url)
 }
 
 export default {
