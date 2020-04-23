@@ -1,5 +1,6 @@
 import eventknappar from './components/eventknappar.js'
 
+
  fetch("http://api.sr.se/api/v2/programs?format=json")
 
     .then(response => response.json())
@@ -27,9 +28,3 @@ async function pauseRadioChannel() {
 }
 
 
-new Vue({
-    el: '#app',
-    data: {
-      message: 'Välj en radiokanal!'
-    }
-  });
