@@ -1,8 +1,8 @@
-import ActionBar from './components/EventKnappar.js'
-import ErrorToast from './components/EventError.js'
+import EventKnappar from './components/EventKnappar.js'
+import EventError from './components/EventError.js'
 
-Vue.component('action-bar', ActionBar)
-Vue.component('toast', ErrorToast)
+Vue.component('action-bar', EventKnappar)
+Vue.component('toast', EventError)
 
 new Vue({
     el: '#app',
