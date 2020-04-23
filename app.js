@@ -1,4 +1,11 @@
 
+new Vue({
+    el: '#app',
+    data: {
+      message: 'Välj en radiokanal!'
+    }
+  });
+
     fetch("http://api.sr.se/api/v2/programs?format=json")
     .then(response => response.json())
     .then(json => console.log(json))
@@ -23,3 +30,5 @@ async function playRadioChannel() {
 async function pauseRadioChannel() {
 
 }
+
+
