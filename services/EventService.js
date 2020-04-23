@@ -8,7 +8,11 @@ function getRadioChannel() {
             }
             return resp.json()
         })
+<<<<<<< HEAD
         .then(json => console.log(json.liveaudio[2]))
+=======
+        .then(json => json.channel.liveaudio.url)
+>>>>>>> 02c0b4a6bf9c2b3ff55034c15999ce2a81751ce3
 }
 
 
