@@ -1,15 +1,20 @@
 
-function getRadioChannel(url) {
-    fetch(url)
+
+function getRadioChannel() {
+    return fetch('http://api.sr.se/api/v2/channels/132?format=json')
         .then(resp =>  {
             if (!resp.ok) {
                 throw new Error(resp.statusText)
             }
-
             return resp.json()
         })
-        .then(json => json.liveaudo.url)
+<<<<<<< HEAD
+        .then(json => console.log(json.liveaudio[2]))
+=======
+        .then(json => json.channel.liveaudio.url)
+>>>>>>> 02c0b4a6bf9c2b3ff55034c15999ce2a81751ce3
 }
+
 
 export default {
     playP1() {
