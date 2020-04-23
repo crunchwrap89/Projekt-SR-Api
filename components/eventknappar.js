@@ -4,16 +4,20 @@ export default {
     
     methods: {
         playP1() {
-            this.update(EventService.p1())
+            EventService.playP1()
+                .then(url => this.$emit('url', url))
         },
         playP2() {
-            this.update(EventService.p2())
+            EventService.playP2()
+                .then(url => this.$emit('url', url))
         },
         playP3() {
-            this.update(EventService.p3())
+            EventService.playP3()
+                .then(url => this.$emit('url', url))
         },
         playP4() {
-            this.update(EventService.p4())
+            EventService.playP4()
+                .then(url => this.$emit('url', url))
         },
     },
     template: `<div style="width: fit-content; display: flex; flex-direction: column; align-items:center;">
