@@ -19,7 +19,7 @@ function getSongList(input) {
             }
             return resp.json()
         })
-        .then(json => json.songlist)
+        .then(json => json.songlist.song[1])
 }
 
 function dateString() {

@@ -31,9 +31,17 @@ export default {
                 p.setAttribute("src", result)
             })
         },
+        songListP1() {
+            let p = document.getElementById("ljudspelare")
+            let e = EventService.songListP1()
+            e.then(function (result) {
+                p.setAttribute("src", result)
+            })
+        },
     },
     template: `<div style="width: fit-content; display: flex; flex-direction: column; align-items:center;">
                 <div style="margin-bottom: 0.2em;">
+                    <input type="button" @click="songListP1" value="Låt från P1">
                     <input type="button" @click="playP1" value="Radio P1">
                     <input type="button" @click="playP2" value="Radio P2">
                     <input type="button" @click="playP3" value="Radio P3">
