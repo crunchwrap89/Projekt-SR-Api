@@ -6,15 +6,17 @@ Vue.component('toast', EventError)
 
 const Home = { template: '<p>my home page</p>' }
 const About = { template: '<p>my about page</p>' }
-const router = new VueRouter({routes: [ { path: '/', component: Home },                 
-                             { path: '/about', component: About } ]    })
+const router = new VueRouter({
+  routes: [ { path: '/', component: Home },                 
+            { path: '/about', component: About } ]    
+          })
 
 
 
-new Vue({
+let app = new Vue({
     el: '#app',
-    router,
     data: {
       message: 'Välj en radiokanal!'
-    }
+    },
+    router
   });
