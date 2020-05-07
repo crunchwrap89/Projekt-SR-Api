@@ -47,19 +47,19 @@ export default {
     },
 
     songListP1() {
-
+        return getSongList('http://api.sr.se/api/v2/playlists/getplaylistbychannelid?id=132&')
     },
 
     songListP2() {
-
+        return getSongList('http://api.sr.se/api/v2/playlists/getplaylistbychannelid?id=163&')
     },
 
     songListP3() {
-
+        return getSongList('http://api.sr.se/api/v2/playlists/getplaylistbychannelid?id=164&')
     },
 
     songListP4() {
-
+        return getSongList('http://api.sr.se/api/v2/playlists/getplaylistbychannelid?id=212&')
     }
 
 }
