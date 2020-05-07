@@ -31,6 +31,7 @@ const Home = { template: `<div class="topdiv">
                             <p>
                               Nyhetsprogram:
                               <ul>
+                              <news></news>
                               </ul>
                             </p>
                           </div>` }
