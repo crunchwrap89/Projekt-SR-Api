@@ -2,9 +2,6 @@ body {
     font-family: "Arial", Times, serif;
     background-color: skyblue;
 }
-.topnav {
-    text-align: center;
-}
 nav {
     text-align: center;
 }
@@ -20,6 +17,12 @@ nav ul.router-link-active,
 nav ul.router-link-exact-active {
   background-color: whitesmoke;
   cursor: pointer;
+}
+.outerdiv {
+    text-align: center;
+}
+.innerdiv {
+    text-align: left;
 }
 
 element {
