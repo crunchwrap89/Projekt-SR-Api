@@ -1,9 +1,10 @@
 body {
     font-family: "Arial", Times, serif;
-    background-color: skyblue;
+    background-color: rgb(112, 190, 221);
 }
 nav {
     text-align: center;
+    color: teal;
 }
 nav ul {
     list-style-type: none;
@@ -11,6 +12,9 @@ nav ul {
     padding: 0;
     overflow: hidden;
     display: inline;
+}
+h1 {
+    color: teal;
 }
 nav ul:hover,
 nav ul.router-link-active,
@@ -20,9 +24,11 @@ nav ul.router-link-exact-active {
 }
 .outerdiv {
     text-align: center;
+    background-color: skyblue;
 }
 .innerdiv {
     text-align: left;
+    background-color: rgb(170, 216, 235);
 }
 
 element {
