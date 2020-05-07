@@ -1,7 +1,7 @@
 
 
-function getRadioChannel() {
-    return fetch('http://api.sr.se/api/v2/channels/132?format=json')
+function getRadioChannel(input) {
+    return fetch(input)
         .then(resp =>  {
             if (!resp.ok) {
                 throw new Error(resp.statusText)

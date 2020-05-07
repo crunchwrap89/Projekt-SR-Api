@@ -3,20 +3,33 @@ import EventService from '../services/EventService.js'
 export default {
     methods: {
         playP1() {
-            EventService.playP1()
-                .then(url => this.$emit('url', url))
+            let p = document.getElementById("ljudspelare")
+            let e = EventService.playP1()
+            e.then(function (result) {
+                p.setAttribute("src", result)
+            })
         },
         playP2() {
             EventService.playP2()
-                .then(url => this.$emit('url', url))
+            let p = document.getElementById("ljudspelare")
+            let e = EventService.playP2()
+            e.then(function (result) {
+                p.setAttribute("src", result)
+            })
         },
         playP3() {
-            EventService.playP3()
-                .then(url => this.$emit('url', url))
+            let p = document.getElementById("ljudspelare")
+            let e = EventService.playP3()
+            e.then(function (result) {
+                p.setAttribute("src", result)
+            })
         },
         playP4() {
-            EventService.playP4()
-                .then(url => this.$emit('url', url))
+            let p = document.getElementById("ljudspelare")
+            let e = EventService.playP4()
+            e.then(function (result) {
+                p.setAttribute("src", result)
+            })
         },
     },
     template: `<div style="width: fit-content; display: flex; flex-direction: column; align-items:center;">
