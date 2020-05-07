@@ -29,6 +29,8 @@ nav ul.router-link-exact-active {
 .innerdiv {
     text-align: left;
     background-color: rgb(170, 216, 235);
+    width: 75%;
+    margin: auto;
 }
 
 element {

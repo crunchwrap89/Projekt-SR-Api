@@ -14,6 +14,7 @@ const Home = { template: `<div class="outerdiv">
                             </nav>
                             <h1>Home</h1>
                             <div class="innerdiv">
+                            <h2> Rubrik </h2>
                             <p> 
                               Lorem ipsum dolor sit amet, ex erant oratio iuvaret sea, sit ne dicit utinam molestie, ne sit nusquam percipit. Vis ea adhuc nonumy facilisi, tractatos splendide suscipiantur et mel. Errem sapientem at mel, mel cu vocent epicurei persecuti. Pri tempor copiosae platonem at, fastidii mediocritatem in pro, vix iudico integre prompta cu.
                               Nulla mazim viris sed cu, sententiae definitionem eam in. Ei nam oratio legendos, assum essent latine sed ea, has ei tantas pertinacia. Tempor persius salutatus te his, no primis ceteros his. Cu pri dicat dicit conclusionemque, dicat deleniti scribentur eam no. Sonet choro no vis, eum ad wisi aperiri albucius, qui quis sale scaevola eu.
@@ -44,7 +45,7 @@ const Radio = { template: `<div class="outerdiv">
                               <h1>Radio</h1>
                             <div class="innerdiv">
                               <action-bar></action-bar>
-                              <audio id ="ljudspelare" src="http://sverigesradio.se/topsy/direkt/srapi/164.mp3" autoplay="" controls="" style="height: 40px; width: 66%;"></audio>
+                              <audio id="ljudspelare" autoplay="" controls="" style="height: 40px; width: 66%;"></audio>
                             </div>
                           </div>` }
 const About = { template: `<div class="outerdiv">
