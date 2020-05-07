@@ -25,7 +25,7 @@ export default {
     template: `<div style="width: fit-content; display: flex; flex-direction: column; align-items:center;">
                 <div style="margin-bottom: 0.2em;">
                     <ul>
-                        <liv-for="titles in todo">{{item}}</li>
+                        <li v-for="item in titles">{{item}}</li>
                     </ul>
                 </div>
                </div>`
