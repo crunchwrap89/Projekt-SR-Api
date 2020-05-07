@@ -4,23 +4,23 @@ import EventError from './components/EventError.js'
 Vue.component('action-bar', EventKnappar)
 Vue.component('toast', EventError)
 
-const Home = { template: `<div><p>my home page</p><nav>
-                              <router-link to="/page1">Page 1</router-link>
-                              <router-link to="/page2">Page 2</router-link>
+const Home = { template: `<div><p>My home page</p><nav>
+                              <router-link to="/radio">Radio</router-link>
+                              <router-link to="/about">About</router-link>
                           </nav></div>` }
-const Page1 = { template: `<div><p>page 1</p><nav>
+const Radio = { template: `<div><p>Radio</p><nav>
                               <router-link to="/">Home</router-link>
-                              <router-link to="/page2">Page 2</router-link>
+                              <router-link to="/about">About</router-link>
                           </nav></div>` }
-const Page2 = { template: `<div><p>page 2</p><nav>
+const About = { template: `<div><p>About</p><nav>
                               <router-link to="/">Home</router-link>
-                              <router-link to="/page1">Page 1</router-link>
+                              <router-link to="/radio">Radio</router-link>
                             </nav></div>` }
 const router = new VueRouter({
       routes: [ 
         { path: '/', component: Home },
-        { path: '/page1', component: Page1 },
-        { path: '/page2', component: Page2 } 
+        { path: '/radio', component: Radio },
+        { path: '/about', component: About } 
     ]})
 
 let app = new Vue({
