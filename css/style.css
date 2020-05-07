@@ -21,6 +21,7 @@ nav ul.router-link-active,
 nav ul.router-link-exact-active {
   background-color: whitesmoke;
   cursor: pointer;
+  transition: 0.5s;
 }
 .outerdiv {
     text-align: center;
