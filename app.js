@@ -22,6 +22,11 @@ const Home = { template: `<div><nav>
                               Vim cibo paulo putant ad, id vis solet interesset, pri an mucius euripidis. At nec error putant mentitum, aliquando forensibus argumentum te est. Vel ad ludus nostro signiferumque, eam in sumo elitr assueverit. Cu mei possit noluisse. Eripuit moderatius cu vim.
                               In vide sadipscing sit, epicuri facilisi te mea. Te quidam repudiandae qui, ius ne quas mucius inimicus. Pri possit sensibus eloquentiam at, eum te commodo diceret iudicabit. Has ei vocent vivendum, laudem numquam graecis id usu. Dolorem hendrerit ad ius. Est primis habemus at, ei duo cibo cetero virtute.
                             </p>
+                            <p>
+                              Nyhetsprogram:
+                              <ul>
+                              </ul>
+                            </p>
                           </div>` }
 const Radio = { template: `<div><nav>
                               <router-link tag="ul" class="col" class-active="active" to="/">Home</router-link>
