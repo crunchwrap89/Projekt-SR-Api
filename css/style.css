@@ -35,6 +35,6 @@ nav ul {
 nav ul:hover,
 nav ul.router-link-active,
 nav ul.router-link-exact-active {
-  background-color: indianred;
+  background-color: whitesmoke;
   cursor: pointer;
 }
