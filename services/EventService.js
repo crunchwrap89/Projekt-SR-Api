@@ -17,7 +17,7 @@ export default {
     },
 
     playP2() {
-        return getRadioChannel('http://api.sr.se/api/v2/channels/162?format=json')
+        return getRadioChannel('http://api.sr.se/api/v2/channels/163?format=json')
     },
 
     playP3() {
