@@ -29,6 +29,18 @@ function dateString() {
     return y + "-" + m + "-" + d;
 }
 
+function getNewsPrograms(input) {
+    return fetch(input)
+        .then(resp =>  {
+            if (!resp.ok) {
+                throw new Error(resp.statusText)
+            }
+            return resp.json()
+        })
+        .then(json => json.episodes)
+        
+}
+
 export default {
     playP1() {
         return getRadioChannel('http://api.sr.se/api/v2/channels/132?format=json')
@@ -60,6 +72,10 @@ export default {
 
     songListP4() {
         return getSongList('http://api.sr.se/api/v2/playlists/getplaylistbychannelid?id=212&')
+    },
+
+    showNewsPrograms() {
+        return getNewsPrograms('http://api.sr.se/api/v2/news/episodes?format=json')
     }
 
 }
