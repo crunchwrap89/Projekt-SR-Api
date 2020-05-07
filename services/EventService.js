@@ -12,7 +12,7 @@ function getRadioChannel(input) {
 }
 
 function getSongList(input) {
-    return fetch(input + dateString())
+    return fetch(input + dateString() + '&format=json')
         .then(resp =>  {
             if (!resp.ok) {
                 throw new Error(resp.statusText)
