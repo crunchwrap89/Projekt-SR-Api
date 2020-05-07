@@ -11,7 +11,10 @@ const Home = { template: `<div><p>My home page</p><nav>
 const Radio = { template: `<div><p>Radio</p><nav>
                               <router-link to="/">Home</router-link>
                               <router-link to="/about">About</router-link>
-                          </nav></div>` }
+                          </nav>
+                            <action-bar></action-bar>
+                            <audio id ="ljudspelare" src="http://sverigesradio.se/topsy/direkt/srapi/164.mp3" autoplay="" controls="" style="height: 40px; width: 66%;"></audio>
+                          </div>` }
 const About = { template: `<div><p>About</p><nav>
                               <router-link to="/">Home</router-link>
                               <router-link to="/radio">Radio</router-link>
