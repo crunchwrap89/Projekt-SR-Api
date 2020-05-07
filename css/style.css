@@ -2,6 +2,7 @@ body {
     font-family: "Arial", Times, serif;
     background-color: skyblue;
 }
+
 element {
     height: 40px;
     width: 66%;
@@ -21,8 +22,20 @@ audio {
     user-select: none;
     -moz-user-focus: normal;
 }
-nav li:hover,
-nav li:active{
-   background-color: indianred;
-   cursor: pointer;
- }
+nav {
+    background-color: yellow;
+    text-align: center;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline;
+}
+nav ul:hover,
+nav ul.router-link-active,
+nav ul.router-link-exact-active {
+  background-color: indianred;
+  cursor: pointer;
+}
