@@ -1,6 +1,6 @@
 import EventKnappar from './components/EventKnappar.js'
 import EventError from './components/EventError.js'
-import News from './components/news'
+import News from './components/news.js'
 
 Vue.component('news', News)
 Vue.component('action-bar', EventKnappar)
