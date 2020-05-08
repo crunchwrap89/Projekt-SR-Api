@@ -2,16 +2,12 @@ body {
     font-family: "Arial", Times, serif;
     background-color: rgb(112, 190, 221);
 }
-nav {
-    text-align: center;
-    color: teal;
-}
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     display: inline;
+    color: teal;
 }
 h1 {
     color: teal;
@@ -33,23 +29,11 @@ nav ul.router-link-exact-active {
     width: 75%;
     margin: auto;
 }
-
-element {
-    height: 40px;
-    width: 66%;
-}
 audio {
-    box-shadow: 0 0 5px rgba(0,0,0,0.6);
-}
-audio {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
     margin: auto;
     max-width: 100%;
     max-height: 100%;
     user-select: none;
     -moz-user-focus: normal;
+    box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
