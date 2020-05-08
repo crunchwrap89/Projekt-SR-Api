@@ -11,7 +11,7 @@ export default {
     methods: {
         showNewsPrograms() {            
             let e = EventService.showNewsPrograms()
-            e.then(function (result) {
+            e.then( (result)  => {
               //let titles = []
                 for(let i = 0; i < result.length; i++) {
                     this.titles.push(result[i].program.name)
