@@ -1,5 +1,3 @@
-
-
 export default { template: `<div class="outerdiv">
                             <nav>
                               <router-link tag="ul" class="col" class-active="active" to="/">Home</router-link>

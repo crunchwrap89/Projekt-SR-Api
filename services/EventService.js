@@ -1,5 +1,3 @@
-
-
 function getRadioChannel(input) {
     return fetch(input)
         .then(resp =>  {
