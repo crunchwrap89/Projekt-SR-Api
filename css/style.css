@@ -2,12 +2,17 @@ body {
     font-family: "Arial", Times, serif;
     background-color: rgb(112, 190, 221);
 }
+nav {
+    text-align: center;
+}
 nav ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: inline;
-    color: teal;
+    background-color: #4ea4af;
+    color: black;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
 }
 h1 {
     color: teal;
@@ -22,12 +27,26 @@ nav ul.router-link-exact-active {
 .outerdiv {
     text-align: center;
     background-color: skyblue;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
 }
 .innerdiv {
+    text-align: center;
+    background-color: skyblue;
+    display: flex;
+    flex-direction: row;
+}
+.vansterdiv {
     text-align: left;
     background-color: rgb(170, 216, 235);
     width: 75%;
-    margin: auto;
+
+}
+.hogerdiv {
+    text-align: left;
+    background-color: cadetblue;
+    width: 25%;
 }
 audio {
     margin: auto;
@@ -37,3 +56,11 @@ audio {
     -moz-user-focus: normal;
     box-shadow: 0 0 5px rgba(0,0,0,0.6);
 }
+
+.wrapper {
+    flex: 1 0 auto;
+  }
+  footer {
+    background: #ccc;
+    padding: 20px;
+  }

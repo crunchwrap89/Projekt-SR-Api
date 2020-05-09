@@ -1,9 +1,4 @@
 export default { template: `<div class="outerdiv">
-                            <nav>
-                              <router-link tag="ul" class="col" class-active="active" to="/">Home</router-link>
-                              <router-link tag="ul" class="col" class-active="active" to="/radio">Radio</router-link>
-                              <router-link tag="ul" class="col" class-active="active" to="/about">About</router-link>
-                            </nav>
                             <h1>About</h1>
                             <div class="innerdiv">
                             <p>Lorem ipsum dolor sit amet, ex erant oratio iuvaret sea, sit ne dicit utinam molestie, ne sit nusquam percipit. Vis ea adhuc nonumy facilisi, tractatos splendide suscipiantur et mel. Errem sapientem at mel, mel cu vocent epicurei persecuti. Pri tempor copiosae platonem at, fastidii mediocritatem in pro, vix iudico integre prompta cu.

@@ -9,5 +9,5 @@ export default new VueRouter({
       { path: '/about', component: About } 
   ],
   linkActiveClass: "active",
-  linkExactActiveClass: "exact-active"
+  linkExactActiveClass: "exact-active",
 })
