@@ -21,6 +21,12 @@ body {
 nav {
     display:block;
     margin:0px auto;
+    /* border-style: dotted;
+    border-width: 5px;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-bottom-width: 0px;
+    border-color: rgb(73, 57, 57); */
 }
 nav ul {
     list-style-type: none;
@@ -34,20 +40,19 @@ nav ul.router-link-active,
 nav ul.router-link-exact-active {
   cursor: pointer;
   transition: 0.1s;
-  text-shadow: 0px 8px 25px #ffffff; 
+  text-shadow: 0px 4px 25px #ffffff; 
 }
 nav ul.col.exact-active.active {
-    text-shadow: 0px 8px 15px #ffffff; 
+    text-shadow: 0px 4px 25px #ffffff; 
 }
 h1 {
     color: black;
 }
 .outerdiv {
     text-align: center;
-    background-color: indianred;
     display: inline-block;
     flex-direction: column;
-    width: 90%;
+    width: 85%;
 }
 .innerdiv {
     text-align: center;
