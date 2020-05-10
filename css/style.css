@@ -2,7 +2,7 @@ body {
     margin:0px;
     text-align: center;
     display:block;
-    background: url("/images/minimal.jpg") no-repeat center;
+    background: rgb(236, 98, 72);
     background-size: 100% 100%;
     font-family: "Verdana", Helvetica,sans-serif;
     font-style: normal;
@@ -15,22 +15,16 @@ body {
     background-position: center top;
     display:block;
     margin:0px auto;
-    background: url("/images/minimalb.jpg") no-repeat center;
+    background: url("/images/minimalradiob.jpg") no-repeat center;
     background-size: 100% 100%;
 }
 nav {
     display:block;
     margin:0px auto;
-    border: white;
-    border-top-width: 0px;
-    border-bottom-width: 0px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-style: solid;
 }
 nav ul {
     list-style-type: none;
-    color: white;
+    color:  rgb(73, 57, 57);
     padding: 10px 25px;
     margin: 0px;
     display: inline-block;
@@ -38,13 +32,12 @@ nav ul {
 nav ul:hover,
 nav ul.router-link-active,
 nav ul.router-link-exact-active {
-  background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
   transition: 0.1s;
-  text-shadow: 5px 5px 8px #000000;
+  text-shadow: 0px 8px 15px #fcff39;
 }
 nav ul.col.exact-active.active {
-    text-shadow: 5px 5px 8px #000000;
+    text-shadow: 0px 8px 25px #fcff39; 
 }
 h1 {
     color: black;
@@ -64,7 +57,7 @@ h1 {
 }
 .vansterdiv {
     text-align: left;
-    background-color: white;
+    background-color: whitesmoke;
     width: 75%;
     margin: 50px;
 
@@ -88,30 +81,26 @@ audio {
     flex: 1 0 auto;
   }
   footer {
-    background: indianred;
+    background: rgb(251, 236, 197);
     padding: 20px;
     height: 100px;
   }
   @media screen and (max-width: 600px) {   
     .innerdiv {
         text-align: center;
-        background-color: skyblue;
         display: flex;
         flex-direction: column;
     }
     .banner {
-        background-color: darkgrey;
         height: 100px;
     }
     .vansterdiv {
         text-align: left;
-        background-color: rgb(170, 216, 235);
         width: 100%;
         margin: 0px;
     }
     .hogerdiv {
         text-align: left;
-        background-color: cadetblue;
         width: 100%;
         margin: 0px;
     }
