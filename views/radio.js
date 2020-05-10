@@ -1,6 +1,5 @@
 export default { template: 
 `<div class="outerdiv">
-   <h1>Radio</h1>
      <div class="innerdiv">
         <div class="vansterdiv">
           <h2> Just nu spelas:  </h2>

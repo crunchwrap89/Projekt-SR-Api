@@ -1,8 +1,6 @@
 export default { template: `<div class="outerdiv">
-                            
-                            <h1>Home</h1>
-                            <div class="innerdiv">
-                            <div class="vansterdiv">
+                             <div class="innerdiv">
+                              <div class="vansterdiv">
                             <h2> Rubrik </h2>
                             <p> 
                               Lorem ipsum dolor sit amet, ex erant oratio iuvaret sea, sit ne dicit utinam molestie, ne sit nusquam percipit. Vis ea adhuc nonumy facilisi, tractatos splendide suscipiantur et mel. Errem sapientem at mel, mel cu vocent epicurei persecuti. Pri tempor copiosae platonem at, fastidii mediocritatem in pro, vix iudico integre prompta cu.
