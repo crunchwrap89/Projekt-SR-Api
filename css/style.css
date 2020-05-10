@@ -1,6 +1,12 @@
 body {
     font-family: "Arial", Times, serif;
     background-color: rgb(112, 190, 221);
+    margin:0px;
+    text-align: center;
+}
+.banner {
+    background-color: darkgrey;
+    height: 150px;
 }
 nav {
     text-align: center;
@@ -10,7 +16,7 @@ nav ul {
     list-style-type: none;
     background-color: #4ea4af;
     color: black;
-    padding: 14px 25px;
+    padding: 10px 25px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
@@ -28,9 +34,9 @@ nav ul.router-link-exact-active {
 .outerdiv {
     text-align: center;
     background-color: skyblue;
-    display: flex;
+    display: inline-block;
     flex-direction: column;
-    width: fit-content;
+    width: 80%;
 }
 .innerdiv {
     text-align: center;
@@ -64,4 +70,5 @@ audio {
   footer {
     background: #ccc;
     padding: 20px;
+    height: 100px;
   }
