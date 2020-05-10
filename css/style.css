@@ -8,6 +8,7 @@ body {
     font-style: normal;
     letter-spacing: .05em;
     line-height: normal;
+    color:  rgb(73, 57, 57);
 }
 .banner {
     height: 275px;
@@ -32,6 +33,7 @@ nav ul {
     list-style-type: none;
     color:  rgb(73, 57, 57);
     padding: 10px 25px;
+    font-size: 15px;
     margin: 0px;
     display: inline-block;
 }
@@ -48,6 +50,13 @@ nav ul.col.exact-active.active {
 h1 {
     color: black;
 }
+h1:hover {
+    color: rgb(236, 98, 72);
+}
+img:hover {
+    opacity: 0.9;
+}
+
 .outerdiv {
     text-align: center;
     display: inline-block;
