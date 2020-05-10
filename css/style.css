@@ -4,9 +4,8 @@ body {
     display:block;
     background: url("/images/minimal.jpg") no-repeat center;
     background-size: 100% 100%;
-    font-family: "Heroic", Helvetica,sans-serif;
+    font-family: "Verdana", Helvetica,sans-serif;
     font-style: normal;
-    font-weight: 500;
     letter-spacing: .05em;
     line-height: normal;
 }
@@ -45,7 +44,7 @@ nav ul.router-link-exact-active {
   text-shadow: 5px 5px 8px #000000;
 }
 nav ul.col.exact-active.active {
-    color: yellow;
+    text-shadow: 5px 5px 8px #000000;
 }
 h1 {
     color: black;
@@ -67,12 +66,14 @@ h1 {
     text-align: left;
     background-color: white;
     width: 75%;
+    margin: 50px;
 
 }
 .hogerdiv {
     text-align: left;
     background-color: whitesmoke;
     width: 25%;
+    margin: 50px;
 }
 audio {
     margin: auto;
@@ -106,10 +107,12 @@ audio {
         text-align: left;
         background-color: rgb(170, 216, 235);
         width: 100%;
+        margin: 0px;
     }
     .hogerdiv {
         text-align: left;
         background-color: cadetblue;
         width: 100%;
+        margin: 0px;
     }
   }
