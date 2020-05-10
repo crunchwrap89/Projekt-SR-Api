@@ -1,58 +1,78 @@
 body {
-    font-family: "Arial", Times, serif;
-    background-color: rgb(112, 190, 221);
+    font-family: "Heroic", Helvetica,sans-serif;
     margin:0px;
     text-align: center;
+    display:block;
+    background: url("/images/boomboxbanner.jpg") no-repeat center;
+    background-size: 100% 100%;
 }
 .banner {
-    background-color: darkgrey;
-    height: 150px;
+    height: 275px;
+    background-repeat:no-repeat;
+    background-position: center top;
+    display:block;
+    margin:0px auto;
+    background: url("/images/boomboxbanner.jpg") no-repeat center;
+    background-size: 100% 100%;
 }
 nav {
-    text-align: center;
-    background-color: teal;
+    background-repeat:no-repeat;
+    background-position: center top;
+    display:block;
+    margin:0px auto;
+    background: url("/images/boomboxbanner.jpg") no-repeat center;
+    background-size: 100% 100%;
+
 }
 nav ul {
     list-style-type: none;
-    background-color: #4ea4af;
-    color: black;
+    font-family: "Heroic", Helvetica,sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: .05em;
+    line-height: normal;
+    text-transform: uppercase;
+    color: white;
     padding: 10px 25px;
-    text-align: center;
-    text-decoration: none;
+    margin: 0px;
     display: inline-block;
-}
-h1 {
-    color: teal;
 }
 nav ul:hover,
 nav ul.router-link-active,
 nav ul.router-link-exact-active {
-  background-color: whitesmoke;
+  background-color: rgba(255, 255, 255, 0.1);
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.1s;
+  text-shadow: 5px 5px 8px #000000;
+}
+nav ul.col.exact-active.active {
+    color: white;
+}
+h1 {
+    color: white;
 }
 .outerdiv {
     text-align: center;
-    background-color: skyblue;
+    background-color: black;
     display: inline-block;
     flex-direction: column;
-    width: 80%;
+    width: 90%;
 }
 .innerdiv {
     text-align: center;
-    background-color: skyblue;
+    background-color: gray;
     display: flex;
     flex-direction: row;
 }
 .vansterdiv {
     text-align: left;
-    background-color: rgb(170, 216, 235);
+    background-color: white;
     width: 75%;
 
 }
 .hogerdiv {
     text-align: left;
-    background-color: cadetblue;
+    background-color: whitesmoke;
     width: 25%;
 }
 audio {
@@ -71,4 +91,26 @@ audio {
     background: #ccc;
     padding: 20px;
     height: 100px;
+  }
+  @media screen and (max-width: 600px) {   
+    .innerdiv {
+        text-align: center;
+        background-color: skyblue;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner {
+        background-color: darkgrey;
+        height: 100px;
+    }
+    .vansterdiv {
+        text-align: left;
+        background-color: rgb(170, 216, 235);
+        width: 100%;
+    }
+    .hogerdiv {
+        text-align: left;
+        background-color: cadetblue;
+        width: 100%;
+    }
   }
