@@ -59,7 +59,7 @@ h1 {
 }
 .innerdiv {
     text-align: center;
-    background-color: gray;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
 }
