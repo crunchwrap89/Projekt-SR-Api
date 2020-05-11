@@ -10,18 +10,9 @@ body {
     line-height: normal;
     color:  black;
 }
-.banner {
-    height: 200px;
-    display:inline-block;
-    text-align: center;
-    margin:0px auto;
-    background-color: whitesmoke;
-    color: black;
-    /* background: url("/images/minimalradioba2.jpg") no-repeat center; */
-    background-size: 100% 100%;
-}
+
+/* Navigation bar */
 nav {
-    /* background-color: #E27D60; */
     background-color: black;
     position: fixed;
     top: 0;
@@ -30,12 +21,6 @@ nav {
     height: 80px;
     display: flex;
     align-items: center;
-    /* border-style: dotted;
-    border-width: 5px;
-    border-left-width: 0px;
-    border-right-width: 0px;
-    border-bottom-width: 0px;
-    border-color: rgb(73, 57, 57); */
 }
 nav ul {
     list-style-type: none;
@@ -46,31 +31,70 @@ nav ul {
 nav ul:hover,
 nav ul.router-link-active,
 nav ul.router-link-exact-active {
-  cursor: pointer;
-  transition: 0.1s;
-  text-shadow: 0px 4px 25px #FFFFFF; 
-  color: #85DCBA;
+    cursor: pointer;
+    transition: 0.1s;
+    text-shadow: 0px 4px 25px #FFFFFF; 
+    color: #85DCBA;
 }
 nav ul.col.exact-active.active {
     text-shadow: 0px 4px 25px #FFFFFF; 
+}
+nav .playing {
+    color: #85DCBA;
+    text-align: right;
+    margin-left: 250px;
+}
+nav .ljudspelare {
+    height: 40px; 
+    width: 50%; 
+    filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+    margin-right: 10px;
+}
+.fb {
+    margin: 5px;
+}
+.fb:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.linkedin {
+    margin: 5px;
+}
+.linkedin:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.1s;
+}
+.rss {
+    margin: 5px;
+}
+.rss:hover{
+    opacity: 0.7;
+    cursor: pointer;
+    transition: 0.1s;
+}
+
+/* Banner with logo */
+.banner {
+    height: 200px;
+    display:inline-block;
+    text-align: center;
+    margin:0px auto;
+    background-color: whitesmoke;
+    color: black;
+    background-size: 100% 100%;
 }
 h1 {
     color: black;
 }
 
-
+/* center */
 .outerdiv {
     text-align: center;
     display: inline-block;
     flex-direction: column;
     width: 90%;
-    /* border-style: solid;
-    border-width: 50px;
-    border-top-width: 0px;
-    border-left-width: 7px;
-    border-right-width: 7px;
-    border-bottom-width: 0px;
-    border-color: rgb(251, 236, 197); */
 }
 .innerdiv {
     text-align: center;
@@ -83,7 +107,6 @@ h1 {
     background-color: white;
     width: 50%;
     margin: 50px;
-
 }
 .hogerdiv {
     text-align: left;
@@ -91,33 +114,37 @@ h1 {
     width: 50%;
     margin: 50px;
 }
+
+/* audioplayer */
 audio {
     margin: auto;
     max-width: 100%;
     max-height: 100%;
     user-select: none;
     -moz-user-focus: normal;
-    /* box-shadow: 0 0 5px rgba(0,0,0,0.6); */
 }
 
-  footer {
+/* footer (bottom of page) */
+footer {
     background: black;
     color: rgb(230, 230, 230);
     padding: 20px;
-    height: 130px;
     width: 100%;
     text-align: center;
     display: inline-block;
     flex-direction: row;
-  }
-  footer ul {
+}
+footer ul {
     text-align: center;
     margin: 25px;
     display: inline-block;
-  }
-  footer ul li:hover {
+}
+footer ul li:hover {
       color: #85DCBA;
-  }
+      cursor: pointer;
+}
+
+/* if page goes below 600px change to these settings */
   @media screen and (max-width: 600px) {   
     .innerdiv {
         text-align: center;
