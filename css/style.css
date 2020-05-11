@@ -49,6 +49,7 @@ nav ul.router-link-exact-active {
   cursor: pointer;
   transition: 0.1s;
   text-shadow: 0px 4px 25px #FFFFFF; 
+  color: #85DCBA;
 }
 nav ul.col.exact-active.active {
     text-shadow: 0px 4px 25px #FFFFFF; 
@@ -56,9 +57,7 @@ nav ul.col.exact-active.active {
 h1 {
     color: black;
 }
-h1:hover {
-    color: #E8A87C;
-}
+
 
 .outerdiv {
     text-align: center;
@@ -115,6 +114,9 @@ audio {
     text-align: center;
     margin: 25px;
     display: inline-block;
+  }
+  footer ul li:hover {
+      color: #85DCBA;
   }
   @media screen and (max-width: 600px) {   
     .innerdiv {
