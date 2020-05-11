@@ -13,7 +13,7 @@ export default { template: `<div class="outerdiv">
                             </div>
                             <div class="hogerdiv">
                             <p>
-                              Nyhetsprogram:
+                              Radio news shows:
                               <ul>
                               <news></news>
                               </ul>
