@@ -2,26 +2,33 @@ body {
     margin:0px;
     text-align: center;
     display:block;
-    background: rgb(236, 98, 72);
+    background: #85DCBA;
     background-size: 100% 100%;
     font-family: "Verdana", Helvetica,sans-serif;
     font-style: normal;
     letter-spacing: .05em;
     line-height: normal;
-    color:  rgb(73, 57, 57);
+    color:  black;
 }
 .banner {
-    height: 275px;
+    height: 150px;
     background-repeat:no-repeat;
     background-position: center top;
     display:block;
     margin:0px auto;
-    background: url("/images/minimalradioba2.jpg") no-repeat center;
+    /* background: url("/images/minimalradioba2.jpg") no-repeat center; */
     background-size: 100% 100%;
 }
 nav {
-    display:block;
-    margin:0px auto;
+    /* background-color: #E27D60; */
+    background-color: #E8A87C;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
     /* border-style: dotted;
     border-width: 5px;
     border-left-width: 0px;
@@ -31,7 +38,7 @@ nav {
 }
 nav ul {
     list-style-type: none;
-    color:  black;
+    color:  white;
     padding: 10px 25px;
     font-size: 13px;
     margin: 0px;
@@ -42,19 +49,16 @@ nav ul.router-link-active,
 nav ul.router-link-exact-active {
   cursor: pointer;
   transition: 0.1s;
-  text-shadow: 0px 4px 25px #ffffff; 
+  text-shadow: 0px 4px 25px #FFFFFF; 
 }
 nav ul.col.exact-active.active {
-    text-shadow: 0px 4px 25px #ffffff; 
+    text-shadow: 0px 4px 25px #FFFFFF; 
 }
 h1 {
     color: black;
 }
 h1:hover {
-    color: rgb(236, 98, 72);
-}
-img:hover {
-    opacity: 0.9;
+    color: #E8A87C;
 }
 
 .outerdiv {
@@ -62,13 +66,13 @@ img:hover {
     display: inline-block;
     flex-direction: column;
     width: 90%;
-    border-style: solid;
+    /* border-style: solid;
     border-width: 50px;
     border-top-width: 0px;
     border-left-width: 7px;
     border-right-width: 7px;
     border-bottom-width: 0px;
-    border-color: rgb(251, 236, 197);
+    border-color: rgb(251, 236, 197); */
 }
 .innerdiv {
     text-align: center;
@@ -79,14 +83,14 @@ img:hover {
 .vansterdiv {
     text-align: left;
     background-color: whitesmoke;
-    width: 75%;
+    width: 50%;
     margin: 50px;
 
 }
 .hogerdiv {
     text-align: left;
     background-color: whitesmoke;
-    width: 25%;
+    width: 50%;
     margin: 50px;
 }
 audio {
@@ -99,7 +103,8 @@ audio {
 }
 
   footer {
-    background: rgb(251, 236, 197);
+    background: #E8A87C;
+    color: white;
     padding: 20px;
     height: 130px;
     width: 100%;
