@@ -39,8 +39,6 @@ nav {
 nav ul {
     list-style-type: none;
     color:  white;
-    padding: 10px 25px;
-    font-size: 13px;
     margin: 0px;
     display: inline-block;
 }
@@ -99,12 +97,12 @@ audio {
     max-height: 100%;
     user-select: none;
     -moz-user-focus: normal;
-    box-shadow: 0 0 5px rgba(0,0,0,0.6);
+    /* box-shadow: 0 0 5px rgba(0,0,0,0.6); */
 }
 
   footer {
     background: #E8A87C;
-    color: gray;
+    color: rgb(230, 230, 230);
     padding: 20px;
     height: 130px;
     width: 100%;
