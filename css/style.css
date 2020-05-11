@@ -2,7 +2,7 @@ body {
     margin:0px;
     text-align: center;
     display:block;
-    background: #85DCBA;
+    background: whitesmoke;
     background-size: 100% 100%;
     font-family: "Verdana", Helvetica,sans-serif;
     font-style: normal;
@@ -21,7 +21,7 @@ body {
 }
 nav {
     /* background-color: #E27D60; */
-    background-color: #E8A87C;
+    background-color: black;
     position: fixed;
     top: 0;
     left: 0;
@@ -74,20 +74,20 @@ h1:hover {
 }
 .innerdiv {
     text-align: center;
-    background-color: whitesmoke;
+    background-color: white;
     display: flex;
     flex-direction: row;
 }
 .vansterdiv {
     text-align: left;
-    background-color: whitesmoke;
+    background-color: white;
     width: 50%;
     margin: 50px;
 
 }
 .hogerdiv {
     text-align: left;
-    background-color: whitesmoke;
+    background-color: white;
     width: 50%;
     margin: 50px;
 }
@@ -101,7 +101,7 @@ audio {
 }
 
   footer {
-    background: #E8A87C;
+    background: black;
     color: rgb(230, 230, 230);
     padding: 20px;
     height: 130px;
