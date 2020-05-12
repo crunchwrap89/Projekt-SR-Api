@@ -29,17 +29,19 @@ nav ul {
     color:  white;
     margin: 0px;
     display: inline-block;
+    background-color: black;
 }
 nav ul:hover,
 nav ul.router-link-active,
 nav ul.router-link-exact-active {
     cursor: pointer;
     transition: 0.1s;
-    text-shadow: 0px 4px 25px #FFFFFF; 
+    /* text-shadow: 0px 4px 25px #FFFFFF;  */
     color: #85DCBA;
 }
 nav ul.col.exact-active.active {
-    text-shadow: 0px 4px 25px #FFFFFF; 
+    /* text-shadow: 0px 4px 25px #FFFFFF;  */
+    color: #85DCBA;
 }
 nav .playing {
     color: #85DCBA;
