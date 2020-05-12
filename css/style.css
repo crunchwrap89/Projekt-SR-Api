@@ -21,6 +21,8 @@ nav {
     height: 80px;
     display: flex;
     align-items: center;
+    transition: top 0.3s;
+    
 }
 nav ul {
     list-style-type: none;
