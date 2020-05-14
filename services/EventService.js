@@ -41,16 +41,16 @@ function getNewsPrograms(input) {
 
 export default {
     play(channel) {
-        if(channel = p1) {
+        if(channel === 1) {
             return getRadioChannel('http://api.sr.se/api/v2/channels/132?format=json')  
         }
-        if(channel = p2) {
+        if(channel === 2) {
             return getRadioChannel('http://api.sr.se/api/v2/channels/163?format=json')
         }
-        if(channel = p3) {
+        if(channel === 3) {
             return getRadioChannel('http://api.sr.se/api/v2/channels/164?format=json')
         }
-        if(channel = p4) {
+        if(channel === 4) {
             return getRadioChannel('http://api.sr.se/api/v2/channels/212?format=json') 
         }
     },

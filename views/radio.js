@@ -28,10 +28,10 @@ export default {
 `<div class="outerdiv">
      <div class="innerdiv">
      <div class="flex-container">
-        <div class="p1">Radio P1 <img class="playbtn" src="../images/playbtn.png" @click="play(p1)"></div>
-        <div class="p2">Radio P2 <img class="playbtn" src="../images/playbtn.png" @click="play(p2)"></div>
-        <div class="p3">Radio P3 <img class="playbtn" src="../images/playbtn.png" @click="play(p3)"></div>  
-        <div class="p4">Radio P4 <img class="playbtn" src="../images/playbtn.png" @click="play(p4)"></div>
+        <div class="p1">Radio P1 <img class="playbtn" src="../images/playbtn.png" @click="play(1)"></div>
+        <div class="p2">Radio P2 <img class="playbtn" src="../images/playbtn.png" @click="play(2)"></div>
+        <div class="p3">Radio P3 <img class="playbtn" src="../images/playbtn.png" @click="play(3)"></div>  
+        <div class="p4">Radio P4 <img class="playbtn" src="../images/playbtn.png" @click="play(4)"></div>
         <div>LocalNewZ</div>
         <div>LocalNewZ6</div>  
         <div>LocalNewZ7</div>
