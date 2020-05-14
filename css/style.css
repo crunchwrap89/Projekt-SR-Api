@@ -182,7 +182,8 @@ footer ul li:hover {
     font-size: 30px;
   }
   .flex-container .p1 {
-    background: url("images/fakenews.jpg") no-repeat fixed center; 
+    background: url("../images/fakenews.jpg") no-repeat;
+    cursor: pointer;
   }
 
 
