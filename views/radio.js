@@ -2,10 +2,10 @@ export default { template:
 `<div class="outerdiv">
      <div class="innerdiv">
      <div class="flex-container">
-        <div>Radio P1</div>
-        <div>Radio P2</div>
-        <div>Radio P3</div>  
-        <div>Radio P4</div>
+        <div class="p1">Radio P1</div>
+        <div class="p2">Radio P2</div>
+        <div class="p3">Radio P3</div>  
+        <div class="p4">Radio P4</div>
         <div>LocalNewZ</div>
         <div>LocalNewZ6</div>  
         <div>LocalNewZ7</div>
