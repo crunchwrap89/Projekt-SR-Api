@@ -6,9 +6,9 @@ export default {
       let e = EventService.showNewsPrograms()
       let p = document.getElementById("ljudspelare")
       e.then((result) => {
-          for (let i= 0; i < result.length; i++) {
-              if (result[i].program.id === channelId) {
-                  p.setAttribute("src", result[i].broadcast.broadcastfiles[0].url)
+          for (let i= 0; i < result.episodes.length; i++) {
+              if (result.episodes[i].program.id === channelId) {
+                  p.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)
               }
           }
       })

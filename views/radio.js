@@ -1,7 +1,28 @@
 import EventService from '../services/EventService.js'
 
 export default {
+     data () {
+          return {
+            loading: false,
+            post: null,
+            error: null
+          }
+        },
+        created () {
+          // fetch the data when the view is created and the data is
+          // already being observed
+          this.fetchImages()
+        },
      methods: {
+
+          fetchImages () {
+               this.error = this.post = null
+               this.loading = true
+               
+               this.play(1)
+
+          },
+
           play(radiokanal) {
                let p = document.getElementById("ljudspelare")
                let i = document.getElementById("nuspelas")
@@ -19,8 +40,8 @@ export default {
                //       e = EventService.playP4()
                // }
                e.then(function (result) {
-                   p.setAttribute("src", result.liveaudio.url)
-                   i.setAttribute("src", result.image)
+                   p.setAttribute("src", result.channel.liveaudio.url)
+                   i.setAttribute("src", result.channel.image)
                })
            },
       },
