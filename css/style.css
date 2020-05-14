@@ -181,10 +181,7 @@ footer ul li:hover {
     line-height: 75px;
     font-size: 30px;
   }
-  .flex-container .p1 {
-    background: url("../images/fakenews.jpg") no-repeat;
-    cursor: pointer;
-  }
+
 
 
 /* if page goes below 600px change to these settings */
