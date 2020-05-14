@@ -24,7 +24,7 @@ export default {
             }
         })
     },
-    playNewsSverigesRadioFinska() {
+    playSverigesRadioFinska() {
         let e = EventService.showNewsPrograms()
         let p = document.getElementById("ljudspelare")
         e.then((result) => {
@@ -88,10 +88,11 @@ export default {
                             </div>
                             <div class="hogerdiv">
                             <div class="flex-container">
-                            <div class="nyheter1">Nyhetskanal1</div>
-                            <div class="nyheter2">Nyhetskanal2</div>
-                            <div class="nyheter3">Nyhetskanal3</div>  
-                            <div class="nyheter4">Nyhetskanal4</div>
+                            <div class="nyheter1">Kulturnytt <img class="playbtn" src="../images/playbtn.png" @click="playKulturnytt"></div>
+                            <div class="nyheter2">Sveriges Radio Finska <img class="playbtn" src="../images/playbtn.png" @click="playSverigesRadioFinska"></div>
+                            <div class="nyheter3">Radiosportens Nyhetssändning <img class="playbtn" src="../images/playbtn.png" @click="playRadiosportensNyhetssandningar"></div>  
+                            <div class="nyheter4">Ekonomiekot <img class="playbtn" src="../images/playbtn.png" @click="playEkonomiekot"></div>
+                            <div class="nyheter4">Samiska Nyheter <img class="playbtn" src="../images/playbtn.png" @click="playSamiskaNyheter"></div>
                             <div>LocalNewZ</div> 
                             <div>LocalNewZ</div>
                             <p>
