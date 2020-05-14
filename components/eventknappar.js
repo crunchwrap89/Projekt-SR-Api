@@ -12,25 +12,30 @@ export default {
             })
         },
         playP2() {
-            EventService.playP2()
             let p = document.getElementById("ljudspelare")
+            let i = document.getElementById("nuspelas")
             let e = EventService.playP2()
             e.then(function (result) {
                 p.setAttribute("src", result.liveaudio.url)
+                i.setAttribute("src", result.image)
             })
         },
         playP3() {
             let p = document.getElementById("ljudspelare")
+            let i = document.getElementById("nuspelas")
             let e = EventService.playP3()
             e.then(function (result) {
                 p.setAttribute("src", result.liveaudio.url)
+                i.setAttribute("src", result.image)
             })
         },
         playP4() {
             let p = document.getElementById("ljudspelare")
+            let i = document.getElementById("nuspelas")
             let e = EventService.playP4()
             e.then(function (result) {
                 p.setAttribute("src", result.liveaudio.url)
+                i.setAttribute("src", result.image)
             })
         },
         songListP1() {
