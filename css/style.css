@@ -181,7 +181,12 @@ footer ul li:hover {
     line-height: 75px;
     font-size: 30px;
   }
-
+  .playbtn {
+      width: 30px;
+  }
+  .playbtn:hover {
+    cursor: pointer;
+}
 
 
 /* if page goes below 600px change to these settings */

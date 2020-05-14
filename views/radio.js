@@ -43,7 +43,7 @@ export default {
 `<div class="outerdiv">
      <div class="innerdiv">
      <div class="flex-container">
-        <div class="p1">Radio P1 <input type="button" @click="playP1" value="Radio P1"></div>
+        <div class="p1">Radio P1 <img class="playbtn" src="../images/playbtn.png" @click="playP1"></div>
         <div class="p2">Radio P2 <input type="button" @click="playP2" value="Radio P2"></div>
         <div class="p3">Radio P3 <input type="button" @click="playP3" value="Radio P3"></div>  
         <div class="p4">Radio P4 <input type="button" @click="playP4" value="Radio P4"></div>
