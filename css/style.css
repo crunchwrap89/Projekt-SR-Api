@@ -197,9 +197,8 @@ footer ul li:hover {
 
 .p1:hover {
     background: transparent url('../images/playbtn.png') no-repeat;
-    background-repeat:no-repeat;
     background-size: cover;
-    opacity: 50%;
+    background-position: center;
 }
 .p2 {
     background-image: url("https://static-cdn.sr.se/sida/images/163/2186754_512_512.jpg?preset=api-default-square");
