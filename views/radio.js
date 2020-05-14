@@ -1,23 +1,11 @@
 import EventService from '../services/EventService.js'
 
-export default {
-     methods: {
+export default {  
+     methods: {    
           play(radiokanal) {
                let p = document.getElementById("ljudspelare")
                let i = document.getElementById("nuspelas")
                let e = EventService.play(radiokanal)
-               // if (radiokanal === 1) {
-               //      e = EventService.playP1()
-               // }
-               // if (radiokanal === 2) {
-               //      e = EventService.playP2()
-               // }
-               // if (radiokanal === 3) {
-               //       e = EventService.playP3()
-               // }
-               // if (radiokanal === 4) {
-               //       e = EventService.playP4()
-               // }
                e.then(function (result) {
                    p.setAttribute("src", result.liveaudio.url)
                    i.setAttribute("src", result.image)
