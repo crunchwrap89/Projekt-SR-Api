@@ -182,10 +182,31 @@ footer ul li:hover {
     font-size: 30px;
   }
   .playbtn {
-      width: 30px;
+      width: 75px;
   }
   .playbtn:hover {
     cursor: pointer;
+}
+
+.p1 {
+    background-image: url("https://static-cdn.sr.se/sida/images/132/2186745_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.p2 {
+    background-image: url("https://static-cdn.sr.se/sida/images/163/2186754_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.p3 {
+    background-image: url("https://static-cdn.sr.se/sida/images/164/2186756_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+}
+.p4 {
+    background-image: url("https://static-cdn.sr.se/sida/images/212/2186768_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
 }
 
 
