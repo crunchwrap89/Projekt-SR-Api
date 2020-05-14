@@ -6,7 +6,7 @@ export default {
             let p = document.getElementById("ljudspelare")
             let e = EventService.playP1()
             e.then(function (result) {
-                p.setAttribute("src", result)
+                p.setAttribute("src", result.liveaudio.url)
             })
         },
         playP2() {
@@ -14,21 +14,21 @@ export default {
             let p = document.getElementById("ljudspelare")
             let e = EventService.playP2()
             e.then(function (result) {
-                p.setAttribute("src", result)
+                p.setAttribute("src", result.liveaudio.url)
             })
         },
         playP3() {
             let p = document.getElementById("ljudspelare")
             let e = EventService.playP3()
             e.then(function (result) {
-                p.setAttribute("src", result)
+                p.setAttribute("src", result.liveaudio.url)
             })
         },
         playP4() {
             let p = document.getElementById("ljudspelare")
             let e = EventService.playP4()
             e.then(function (result) {
-                p.setAttribute("src", result)
+                p.setAttribute("src", result.liveaudio.url)
             })
         },
         songListP1() {

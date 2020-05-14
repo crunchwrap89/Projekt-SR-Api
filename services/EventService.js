@@ -6,7 +6,7 @@ function getRadioChannel(input) {
             }
             return resp.json()
         })
-        .then(json => json.channel.liveaudio.url)
+        .then(json => json.channel)
 }
 
 function getSongList(input) {
