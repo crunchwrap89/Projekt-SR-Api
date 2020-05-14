@@ -2,75 +2,16 @@ import EventService from '../services/EventService.js'
 
 export default { 
   methods: {
-    showNewsPrograms() {
-        let e = EventService.showNewsPrograms()
-        e.then((result) => {
-              this.titles.push(result[27].program.name)
-              this.titles.push(result[28].program.name)
-              this.titles.push(result[29].program.name)
-              this.titles.push(result[32].program.name)
-              this.titles.push(result[33].program.name)
-          
-        })
-    },
-    playKulturnytt() {
-        let e = EventService.showNewsPrograms()
-        let p = document.getElementById("ljudspelare")
-        e.then((result) => {
-            for (let i= 0; i < result.length; i++) {
-                if (result[i].program.id === 478) {
-                    p.setAttribute("src", result[i].broadcast.broadcastfiles[0].url)
-                }
-            }
-        })
-    },
-    playSverigesRadioFinska() {
-        let e = EventService.showNewsPrograms()
-        let p = document.getElementById("ljudspelare")
-        e.then((result) => {
-            for (let i= 0; i < result.length; i++) {
-                if (result[i].program.id === 185) {
-                    p.setAttribute("src", result[i].broadcast.broadcastfiles[0].url)
-                }
-            }
-        })
-
-    },
-    playRadiosportensNyhetssandningar() {
-        let e = EventService.showNewsPrograms()
-        let p = document.getElementById("ljudspelare")
-        e.then((result) => {
-            for (let i= 0; i < result.length; i++) {
-                if (result[i].program.id === 2895) {
-                    p.setAttribute("src", result[i].broadcast.broadcastfiles[0].url)
-                }
-            }
-        })
-
-    },
-    playEkonomiekot() {
-        let e = EventService.showNewsPrograms()
-        let p = document.getElementById("ljudspelare")
-        e.then((result) => {
-            for (let i= 0; i < result.length; i++) {
-                if (result[i].program.id === 178) {
-                    p.setAttribute("src", result[i].broadcast.broadcastfiles[0].url)
-                }
-            }
-        })
-
-    },
-    playSamiskaNyheter() {
-        let e = EventService.showNewsPrograms()
-        let p = document.getElementById("ljudspelare")
-        e.then((result) => {
-            for (let i= 0; i < result.length; i++) {
-                if (result[i].program.id === 2327) {
-                    p.setAttribute("src", result[i].broadcast.broadcastfiles[0].url)
-                }
-            }
-        })
-            console.log("tjo")
+    playNewsChannel(channelId) {
+      let e = EventService.showNewsPrograms()
+      let p = document.getElementById("ljudspelare")
+      e.then((result) => {
+          for (let i= 0; i < result.length; i++) {
+              if (result[i].program.id === channelId) {
+                  p.setAttribute("src", result[i].broadcast.broadcastfiles[0].url)
+              }
+          }
+      })
     },
 }, 
   template: `<div class="outerdiv">
@@ -88,11 +29,11 @@ export default {
                             </div>
                             <div class="hogerdiv">
                             <div class="flex-container">
-                            <div class="nyheter1">Kulturnytt <img class="playbtn" src="../images/playbtn.png" @click="playKulturnytt"></div>
-                            <div class="nyheter2">Sveriges Radio Finska <img class="playbtn" src="../images/playbtn.png" @click="playSverigesRadioFinska"></div>
-                            <div class="nyheter3">Radiosportens Nyhetssändning <img class="playbtn" src="../images/playbtn.png" @click="playRadiosportensNyhetssandningar"></div>  
-                            <div class="nyheter4">Ekonomiekot <img class="playbtn" src="../images/playbtn.png" @click="playEkonomiekot"></div>
-                            <div class="nyheter4">Samiska Nyheter <img class="playbtn" src="../images/playbtn.png" @click="playSamiskaNyheter"></div>
+                            <div class="nyheter1">Kulturnytt <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(478)"></div>
+                            <div class="nyheter2">Sveriges Radio Finska <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(185)"></div>
+                            <div class="nyheter3">Radiosportens Nyhetssändning <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2895)"></div>  
+                            <div class="nyheter4">Ekonomiekot <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(178)"></div>
+                            <div class="nyheter4">Samiska Nyheter <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2327)"></div>
                             <div>LocalNewZ</div> 
                             <div>LocalNewZ</div>
                             
