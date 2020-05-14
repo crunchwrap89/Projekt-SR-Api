@@ -95,16 +95,7 @@ export default {
                             <div class="nyheter4">Samiska Nyheter <img class="playbtn" src="../images/playbtn.png" @click="playSamiskaNyheter"></div>
                             <div>LocalNewZ</div> 
                             <div>LocalNewZ</div>
-                            <p>
-                              Radio news shows:
-                              <ul>
-                              <li @click="playKulturnytt">Kulturnytt</li>
-                              <li @click="playNewsSverigesRadioFinska">Sveriges Radio Finska</li>
-                              <li @click="playRadiosportensNyhetssandningar">Radiosportens Nyhetssändningar</li>
-                              <li @click="playEkonomiekot">Ekonomiekot</li>
-                              <li @click="playSamiskaNyheter">Samiska Nyheter</li>
-                              </ul>
-                            </p>
+                            
                             </div>
                             </div>
                           </div>` }
