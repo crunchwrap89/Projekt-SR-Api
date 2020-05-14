@@ -4,9 +4,11 @@ export default {
     methods: {
         playP1() {
             let p = document.getElementById("ljudspelare")
+            let i = document.getElementById("nuspelas")
             let e = EventService.playP1()
             e.then(function (result) {
                 p.setAttribute("src", result.liveaudio.url)
+                i.setAttribute("src", result.image)
             })
         },
         playP2() {
