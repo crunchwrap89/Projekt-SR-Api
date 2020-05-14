@@ -9,13 +9,15 @@ export default {
     },
 
     methods: {
-        showNewsPrograms() {            
+        showNewsPrograms() {
             let e = EventService.showNewsPrograms()
-            e.then( (result)  => {
-              //let titles = []
-                for(let i = 0; i < result.length; i++) {
-                    this.titles.push(result[i].program.name)
-                }
+            e.then((result) => {
+                this.titles.push(result[0].program.name)
+                this.titles.push(result[27].program.name)
+                this.titles.push(result[28].program.name)
+                this.titles.push(result[29].program.name)
+                this.titles.push(result[32].program.name)
+
                 console.log(this.titles)
             })
         },
