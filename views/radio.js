@@ -1,44 +1,13 @@
 import EventService from '../services/EventService.js'
 
-export default {
-     data () {
-          return {
-            loading: false,
-            post: null,
-            error: null
-          }
-        },
-        created () {
-          // fetch the data when the view is created and the data is
-          // already being observed
-          this.fetchImages()
-        },
-     methods: {
 
-          fetchImages () {
-               this.error = this.post = null
-               this.loading = true
-               
-               this.play(1)
 
-          },
-
+export default {  
+     methods: {    
           play(radiokanal) {
                let p = document.getElementById("ljudspelare")
                let i = document.getElementById("nuspelas")
                let e = EventService.play(radiokanal)
-               // if (radiokanal === 1) {
-               //      e = EventService.playP1()
-               // }
-               // if (radiokanal === 2) {
-               //      e = EventService.playP2()
-               // }
-               // if (radiokanal === 3) {
-               //       e = EventService.playP3()
-               // }
-               // if (radiokanal === 4) {
-               //       e = EventService.playP4()
-               // }
                e.then(function (result) {
                    p.setAttribute("src", result.channel.liveaudio.url)
                    i.setAttribute("src", result.channel.image)
