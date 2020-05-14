@@ -2,7 +2,8 @@ export default { template:
 `<div class="outerdiv">
      <div class="innerdiv">
      <div class="flex-container">
-        <div class="p1">Radio P1</div>
+        <div class="p1">Radio P1
+        <input type="button" @click="playP1" value="Radio P1"></div>
         <div class="p2">Radio P2</div>
         <div class="p3">Radio P3</div>  
         <div class="p4">Radio P4</div>
