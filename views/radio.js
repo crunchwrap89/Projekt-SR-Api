@@ -38,13 +38,6 @@ export default {
                   i.setAttribute("src", result.image)
               })
           },
-          songListP1() {
-              let p = document.getElementById("ljudspelare")
-              let e = EventService.songListP1()
-              e.then(function (result) {
-                  p.setAttribute("src", result)
-              })
-          },
       },
      template: 
 `<div class="outerdiv">
