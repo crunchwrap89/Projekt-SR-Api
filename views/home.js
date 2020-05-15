@@ -33,11 +33,11 @@ export default {
                             </div>
                             <div class="hogerdiv">
                             <div class="flex-container">
-                            <div class="nyheter1">Kulturnytt <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(478)"></div>
-                            <div class="nyheter2">Sveriges Radio Finska <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(185)"></div>
-                            <div class="nyheter3">Radiosportens Nyhetssändning <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2895)"></div>  
-                            <div class="nyheter4">Ekonomiekot <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(178)"></div>
-                            <div class="nyheter4">Samiska Nyheter <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2327)"></div>
+                            <div class="n1"><img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(478)">Kulturnytt</div>
+                            <div class="n2"><img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(185)">Sveriges Radio Finska</div>
+                            <div class="n3"><img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2895)">Radiosportens Nyhetssändning</div>  
+                            <div class="n4"><img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(178)">Ekonomiekot</div>
+                            <div class="n5"><img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2327)">Samiska Nyheter</div>
                             </div>
                             </div>
                           </div>` }

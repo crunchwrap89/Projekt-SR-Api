@@ -209,7 +209,36 @@ footer ul li:hover {
     background-size: cover;
     background-position: center;
 }
-
+.n1 {
+    background-image: url("https://static-cdn.sr.se/sida/images/132/2186745_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.n2 {
+    background-image: url("https://static-cdn.sr.se/sida/images/132/2186745_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.n3 {
+    background-image: url("https://static-cdn.sr.se/sida/images/132/2186745_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.n4 {
+    background-image: url("https://static-cdn.sr.se/sida/images/132/2186745_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.n5 {
+    background-image: url("https://static-cdn.sr.se/sida/images/132/2186745_512_512.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 /* if page goes below 600px change to these settings */
   @media screen and (max-width: 600px) {   
