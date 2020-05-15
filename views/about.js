@@ -1,5 +1,5 @@
 export default { template: `<div class="outerdiv">
-                             <div class="innerdiv">
+                             <div class="innerdiv2">
                               <div class="vansterdiv">
                             <h2> Rubrik </h2>
                             <p> 

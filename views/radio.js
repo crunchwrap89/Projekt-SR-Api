@@ -17,6 +17,7 @@ export default {
      template: 
 `<div class="outerdiv">
      <div class="innerdiv">
+     <h1> Radio channels </h1>
      <div class="flex-container">
         <div class="p1"><img class="playbtn" src="../images/playbtn.png" @click="play(1)"></div>
         <div class="p2"><img class="playbtn" src="../images/playbtn.png" @click="play(2)"></div>
