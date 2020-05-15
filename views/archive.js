@@ -12,7 +12,9 @@ export default { template:
               </div>
               <h1>Podcasts</h1>
               <div class="flex-container2">
-                  <div>P3 Dystopia</div>
+                  <div>
+                  <router-link to="/dystopia">P3 Dystopia</router-link>
+                  </div>
                   <div>
                   <router-link to="/dokumentar">P3 Dokumentär</router-link>
                   </div>
