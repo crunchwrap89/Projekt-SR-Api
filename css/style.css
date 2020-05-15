@@ -39,11 +39,12 @@ nav ul:hover,
 nav ul.router-link-active,
 nav ul.router-link-exact-active {
     cursor: pointer;
-    transition: 0.1s;
+    transition: 0.3s;
     color: #85DCBA;
+
 }
 nav ul.col.exact-active.active {
-    color: #85DCBA;
+    /* color: #85DCBA; */
 }
 .navright {
     display: flex;
@@ -51,7 +52,7 @@ nav ul.col.exact-active.active {
 }
 
 nav .playing {
-    color: #85DCBA;
+    color: white;
     margin: 10px;
 }
 
