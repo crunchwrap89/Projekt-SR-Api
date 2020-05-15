@@ -22,8 +22,7 @@ nav {
     display: flex;
     align-items: center;
     transition: top 0.3s;
-    
-    
+
 }
 .navleft{
     display: flex;
@@ -49,6 +48,8 @@ nav ul.col.exact-active.active {
 .navright {
     display: flex;
     align-items: center;
+    position: relative;
+    margin-left: auto;
 }
 
 nav .playing {
@@ -114,19 +115,19 @@ h1 {
 }
 .innerdiv {
     text-align: center;
-    background-color: white;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
 }
 .vansterdiv {
     text-align: left;
-    background-color: white;
+    background-color: whitesmoke;
     width: 50%;
     margin: 50px;
 }
 .hogerdiv {
     text-align: left;
-    background-color: white;
+    background-color: whitesmoke;
     width: 50%;
     margin: 50px;
 }
@@ -167,7 +168,7 @@ footer ul li:hover {
   }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color: whitesmoke;
     width: 230px;
     height: 200px;
     margin: 10px;
@@ -183,7 +184,7 @@ footer ul li:hover {
   }
   
   .flex-container2 > div {
-    background-color: #f1f1f1;
+    background-color: whitesmoke;
     width: 230px;
     height: 200px;
     margin: 10px;
