@@ -38,9 +38,6 @@ export default {
                             <div class="nyheter3">Radiosportens Nyhetssändning <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2895)"></div>  
                             <div class="nyheter4">Ekonomiekot <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(178)"></div>
                             <div class="nyheter4">Samiska Nyheter <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2327)"></div>
-                            <div>LocalNewZ</div> 
-                            <div>LocalNewZ</div>
-                            
                             </div>
                             </div>
                           </div>` }
