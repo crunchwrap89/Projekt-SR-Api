@@ -1,3 +1,4 @@
+
 export default { template: 
     `<div class="outerdiv">
          <div class="innerdiv">
@@ -13,7 +14,7 @@ export default { template:
               <div class="flex-container2">
                   <div>P3 Dystopia</div>
                   <div>
-                  <router-link to="../dokumentar">P3 Dokumentär</router-link>
+                  <router-link to="/dokumentar">P3 Dokumentär</router-link>
                   </div>
                   <div>P3 Roffel</div>  
                   <div>Poddroffel</div> 
