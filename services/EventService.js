@@ -68,7 +68,7 @@ export default {
     },
 
     getDocumentaries() {
-        return getData('http://api.sr.se/api/v2/podfiles?programid=1646&format=json')
+        return getData('http://api.sr.se/api/v2/podfiles?programid=2519&format=json')
     }
 
 }
