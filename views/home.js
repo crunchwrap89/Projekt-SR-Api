@@ -1,19 +1,23 @@
 import EventService from '../services/EventService.js'
 
-export default { 
+export default {
   methods: {
     playNewsChannel(channelId) {
       let e = EventService.showNewsPrograms()
       let p = document.getElementById("ljudspelare")
       e.then((result) => {
-          for (let i= 0; i < result.episodes.length; i++) {
-              if (result.episodes[i].program.id === channelId) {
-                  p.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)
-              }
+        for (let i = 0; i < result.episodes.length; i++) {
+          if (result.episodes[i].program.id === channelId) {
+            try {
+              p.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)
+            } catch {
+              p.setAttribute("src", result.episodes[i].listenpodfile.url)
+            }
           }
+        }
       })
     },
-}, 
+  },
   template: `<div class="outerdiv">
                              <div class="innerdiv">
                               <div class="vansterdiv">
@@ -34,9 +38,6 @@ export default {
                             <div class="nyheter3">Radiosportens Nyhetssändning <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2895)"></div>  
                             <div class="nyheter4">Ekonomiekot <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(178)"></div>
                             <div class="nyheter4">Samiska Nyheter <img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2327)"></div>
-                            <div>LocalNewZ</div> 
-                            <div>LocalNewZ</div>
-                            
                             </div>
                             </div>
                           </div>` }
