@@ -1,7 +1,19 @@
 import EventService from "../services/EventService"
 
 export default {
+    created() {
+        this.fetchData()
+   },
+   watch: {
+        $route(to, from) {
+             this.fetchData()
+        },
+   },
     methods: {
+        fetchData() {
+            this.getDocumentaries()
+        },
+
         getDocumentaries() {
             let container = document.getElementsByClassName('outerdiv')[0]
             let d = EventService.getDocumentaries()
@@ -14,6 +26,7 @@ export default {
                 }
             })
         }
+        
     },
     template: 
 `<div class="outerdiv">

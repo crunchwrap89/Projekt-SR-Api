@@ -2,7 +2,7 @@ import Home from '../views/home.js'
 import Radio from '../views/radio.js'
 import Archive from '../views/archive.js'
 import About from '../views/about.js'
-// import Dokumentar from '..views/dokumentar.js'
+// import Dokumentar from '../views/dokumentar.js'
 
 export default new VueRouter({
     routes: [ 
