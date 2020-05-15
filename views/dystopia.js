@@ -1,11 +1,10 @@
 import EventService from "../services/EventService.js"
 
 export default {
-
-    methods: {
     mounted() {
         this.getDystopia()
     },
+    methods: {
         getDystopia() {
             let outerdiv = document.getElementById('superId')
             let d = EventService.getDystopia()
