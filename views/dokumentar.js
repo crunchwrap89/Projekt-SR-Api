@@ -1,8 +1,11 @@
 import EventService from "../services/EventService.js"
 
 export default {
-  
+
     methods: {
+    mounted() {
+        this.getDocumentaries()
+    },
         getDocumentaries() {
             let outerdiv = document.getElementById('kuk')
             let d = EventService.getDocumentaries()
@@ -17,6 +20,7 @@ export default {
         }
         
     },
+    
     template: 
 `<div class="outerdiv" id="kuk">
      <div class="innerdiv">
