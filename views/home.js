@@ -1,19 +1,23 @@
 import EventService from '../services/EventService.js'
 
-export default { 
+export default {
   methods: {
     playNewsChannel(channelId) {
       let e = EventService.showNewsPrograms()
       let p = document.getElementById("ljudspelare")
       e.then((result) => {
-          for (let i= 0; i < result.episodes.length; i++) {
-              if (result.episodes[i].program.id === channelId) {
-                  p.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)
-              }
+        for (let i = 0; i < result.episodes.length; i++) {
+          if (result.episodes[i].program.id === channelId) {
+            try {
+              p.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)
+            } catch {
+              p.setAttribute("src", result.episodes[i].listenpodfile.url)
+            }
           }
+        }
       })
     },
-}, 
+  },
   template: `<div class="outerdiv">
                              <div class="innerdiv">
                               <div class="vansterdiv">
