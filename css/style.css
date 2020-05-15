@@ -58,12 +58,10 @@ nav .playing {
 }
 
 nav .playingimg {
-    height: 75px;
     width: 75px;
     margin: 10px;
 }
 nav .ljudspelare {
-    width: 150px;
     margin: 10px; 
     filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
 }
