@@ -241,15 +241,27 @@ footer ul li:hover {
     nav {
         display: flex;
         flex-direction: column;
-        height: 130px;
+        height: 150px;
         
     }
-    nav a {
+    nav ul li {
+        float: none;
         margin: 0px;
+        text-align: left;
     }
 
     .flex-container {
         flex-direction: column;
       }
+    .playing {
+        display: none;
+    }
+    ul {
+        margin-right: 0px;
+    }  
+    .navright {
+        display: flex;
+        margin-left: 0px;
+    }
   }
 
