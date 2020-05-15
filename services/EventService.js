@@ -20,7 +20,6 @@ function getSongList(input) {
         .then(json => json.songlist.song[1])
 }
 
-
 // function getNewsPrograms(input) {
 //     return fetch(input)
 //         .then(resp =>  {
@@ -29,8 +28,7 @@ function getSongList(input) {
 //             }
 //             return resp.json()
 //         })
-//         .then(json => json.episodes)
-        
+//         .then(json => json.episodes)        
 // }
 
 export default {

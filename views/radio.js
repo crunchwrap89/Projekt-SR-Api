@@ -2,20 +2,22 @@ import EventService from '../services/EventService.js'
 
 
 
-export default {  
-     methods: {    
+export default {
+
+     methods: {
+      
           play(radiokanal) {
                let p = document.getElementById("ljudspelare")
                let i = document.getElementById("nuspelas")
                let e = EventService.play(radiokanal)
                e.then(function (result) {
-                   p.setAttribute("src", result.channel.liveaudio.url)
-                   i.setAttribute("src", result.channel.image)
+                    p.setAttribute("src", result.channel.liveaudio.url)
+                    i.setAttribute("src", result.channel.image)
                })
-           },
-      },
-     template: 
-`<div class="outerdiv">
+          },
+     },
+     template:
+          `<div class="outerdiv">
      <div class="innerdiv">
      <div class="flex-container">
         <div class="p1"><img class="playbtn" src="../images/playbtn.png" @click="play(1)"></div>
