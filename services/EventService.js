@@ -67,6 +67,10 @@ export default {
 
     showNewsPrograms() {
         return getData('http://api.sr.se/api/v2/news/episodes?format=json')
+    },
+
+    getDocumentaries() {
+        return getData('http://api.sr.se/api/v2/podfiles?programid=1646&format=json')
     }
 
 }
