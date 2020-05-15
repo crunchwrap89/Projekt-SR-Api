@@ -22,8 +22,7 @@ nav {
     display: flex;
     align-items: center;
     transition: top 0.3s;
-    
-    
+
 }
 .navleft{
     display: flex;
@@ -49,6 +48,8 @@ nav ul.col.exact-active.active {
 .navright {
     display: flex;
     align-items: center;
+    position: relative;
+    margin-left: auto;
 }
 
 nav .playing {
@@ -57,38 +58,12 @@ nav .playing {
 }
 
 nav .playingimg {
-    height: 75px;
     width: 75px;
     margin: 10px;
 }
 nav .ljudspelare {
-    width: 150px;
     margin: 10px; 
     filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
-}
-.fb {
-    margin: 5px;
-}
-.fb:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transition: 0.1s;
-}
-.linkedin {
-    margin: 5px;
-}
-.linkedin:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transition: 0.1s;
-}
-.rss {
-    margin: 5px;
-}
-.rss:hover{
-    opacity: 0.7;
-    cursor: pointer;
-    transition: 0.1s;
 }
 
 /* Banner with logo */
@@ -113,20 +88,26 @@ h1 {
     width: 90%;
 }
 .innerdiv {
+    text-align: left;
+    background-color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+}
+.innerdiv2 {
     text-align: center;
-    background-color: white;
+    background-color: whitesmoke;
     display: flex;
     flex-direction: row;
 }
 .vansterdiv {
     text-align: left;
-    background-color: white;
+    background-color: whitesmoke;
     width: 50%;
     margin: 50px;
 }
 .hogerdiv {
     text-align: left;
-    background-color: white;
+    background-color: whitesmoke;
     width: 50%;
     margin: 50px;
 }
@@ -163,15 +144,13 @@ footer ul li:hover {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
   }
   
   .flex-container > div {
-    background-color: #f1f1f1;
+    background-color: whitesmoke;
     width: 230px;
     height: 200px;
     margin: 10px;
-    text-align: center;
     line-height: 75px;
     font-size: 30px;
   }
@@ -183,7 +162,7 @@ footer ul li:hover {
   }
   
   .flex-container2 > div {
-    background-color: #f1f1f1;
+    background-color: whitesmoke;
     width: 230px;
     height: 200px;
     margin: 10px;
@@ -233,6 +212,11 @@ footer ul li:hover {
 /* if page goes below 600px change to these settings */
   @media screen and (max-width: 600px) {   
     .innerdiv {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+    .innerdiv2 {
         text-align: center;
         display: flex;
         flex-direction: column;

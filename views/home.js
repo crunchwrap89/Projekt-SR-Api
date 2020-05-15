@@ -19,7 +19,7 @@ export default {
     },
   },
   template: `<div class="outerdiv">
-                             <div class="innerdiv">
+                             <div class="innerdiv2">
                               <div class="vansterdiv">
                               <h1> Donald Trump: "It's fake news"</h1>
                               <img src="../images/fakenews.jpg" alt="Italian Trulli" style="width:100%;max-width:800px">
