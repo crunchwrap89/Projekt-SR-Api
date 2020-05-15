@@ -174,21 +174,19 @@ footer ul li:hover {
     font-size: 30px;
   }
   .playbtn {
-      width: 75px;
+      height: 100%;
+      opacity: 0.0;
   }
   .playbtn:hover {
     cursor: pointer;
+    opacity: 0.95;
+    transition: 0.3s;
+    
 }
 
 .p1 {
     background-image: url("https://static-cdn.sr.se/sida/images/132/2186745_512_512.jpg?preset=api-default-square");
     background-repeat:no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.p1:hover {
-    background: transparent url('../images/playbtn.png') no-repeat;
     background-size: cover;
     background-position: center;
 }
