@@ -69,6 +69,10 @@ export default {
 
     getDocumentaries() {
         return getData('http://api.sr.se/api/v2/podfiles?programid=1646&format=json')
+    },
+
+    getDystopia() {
+        return getData('http://api.sr.se/api/v2/episodes/index?programid=5188&format=json')
     }
 
 }
