@@ -11,19 +11,23 @@
     </head>
 <body>
         <div id="app">
-            <nav id="navbar">
-                <router-link tag="ul" class="col" class-active="active" to="/">News</router-link>
-                <router-link tag="ul" class="col" class-active="active" to="/radio">Live Radio</router-link>
-                <router-link tag="ul" class="col" class-active="active" to="/archive">Archive</router-link>
-                <router-link tag="ul" class="col" class-active="active" to="/about">About</router-link>
-                <h2 class="playing">Now playing: </h2> <img class="playingimg" id="nuspelas" src="">
-                <audio id="ljudspelare" autoplay="" controls=""></audio>
-                <img class="fb" src="../images/fb1.svg" alt="Italian Trulli" style="width:100%;max-width:20px">
-                <img class="linkedin" src="../images/in1.svg" alt="Italian Trulli" style="width:100%;max-width:20px">
-                <img class="rss" src="../images/rssicon.svg" alt="Italian Trulli" style="width:100%;max-width:20px; margin-right: 10%">
-              </nav>
+          <nav id="navbar">
+            <div class="navleft">
+                 <router-link tag="ul" class="col" class-active="active" to="/">News</router-link>
+                 <router-link tag="ul" class="col" class-active="active" to="/radio">Live Radio</router-link>
+                 <router-link tag="ul" class="col" class-active="active" to="/archive">Archive</router-link>
+                 <router-link tag="ul" class="col" class-active="active" to="/about">About</router-link>
+            </div>
+            <div class="navright">
+                 <h2 class="playing">Now playing: </h2> <img class="playingimg" id="nuspelas" src="">
+                 <audio id="ljudspelare" autoplay="" controls=""></audio>
+                 <img class="fb" src="../images/fb1.svg" alt="Italian Trulli" style="width:100%;max-width:20px">
+                 <img class="linkedin" src="../images/in1.svg" alt="Italian Trulli" style="width:100%;max-width:20px">
+                 <img class="rss" src="../images/rssicon.svg" alt="Italian Trulli" style="width:100%;max-width:20px;"> 
+            </div>
+          </nav>
 
-              <div class="banner"><br><br><br><br><br><h1>LOGO HÄR?</h1></div>
+              <div class="banner"><br><br><br><br><br><img class="logo" src="../images/radioroff2.png" alt="logo" style="width:100%;max-width:300px"></div>
 
             <router-view class="center"></router-view> 
             

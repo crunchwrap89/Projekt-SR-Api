@@ -23,6 +23,10 @@ nav {
     align-items: center;
     transition: top 0.3s;
     
+    
+}
+.navleft{
+    display: flex;
 }
 nav ul {
     list-style-type: none;
@@ -36,28 +40,30 @@ nav ul.router-link-active,
 nav ul.router-link-exact-active {
     cursor: pointer;
     transition: 0.1s;
-    /* text-shadow: 0px 4px 25px #FFFFFF;  */
     color: #85DCBA;
 }
 nav ul.col.exact-active.active {
-    /* text-shadow: 0px 4px 25px #FFFFFF;  */
     color: #85DCBA;
 }
+.navright {
+    display: flex;
+    align-items: center;
+}
+
 nav .playing {
     color: #85DCBA;
-    text-align: right;
-    margin-left: 250px;
+    margin: 10px;
 }
 
 nav .playingimg {
     height: 75px;
     width: 75px;
+    margin: 10px;
 }
 nav .ljudspelare {
-    height: 40px; 
-    width: 50%; 
+    width: 150px;
+    margin: 10px; 
     filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
-    margin-right: 10px;
 }
 .fb {
     margin: 5px;
@@ -86,7 +92,7 @@ nav .ljudspelare {
 
 /* Banner with logo */
 .banner {
-    height: 200px;
+    height: 250px;
     display:inline-block;
     text-align: center;
     margin:0px auto;
@@ -156,6 +162,7 @@ footer ul li:hover {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
   }
   
   .flex-container > div {
@@ -170,6 +177,8 @@ footer ul li:hover {
   .flex-container2 {
     display: flex;
     flex-wrap: wrap;
+    margin: auto;
+    
   }
   
   .flex-container2 > div {
@@ -227,9 +236,6 @@ footer ul li:hover {
         display: flex;
         flex-direction: column;
     }
-    .banner {
-        height: 100px;
-    }
     .vansterdiv {
         text-align: left;
         width: 100%;
@@ -241,4 +247,18 @@ footer ul li:hover {
         margin: 0px;
     }
 
+  }
+
+  @media screen and (max-width: 850px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        height: 130px;
+    }
+    .banner {
+        margin-top: 50px;
+    }
+    .flex-container {
+        flex-direction: column;
+      }
   }

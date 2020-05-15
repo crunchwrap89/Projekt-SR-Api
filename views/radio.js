@@ -21,15 +21,7 @@ export default {
         <div class="p1"><img class="playbtn" src="../images/playbtn.png" @click="play(1)"></div>
         <div class="p2"><img class="playbtn" src="../images/playbtn.png" @click="play(2)"></div>
         <div class="p3"><img class="playbtn" src="../images/playbtn.png" @click="play(3)"></div>  
-        <div class="p4"><img class="playbtn" src="../images/playbtn.png" @click="play(4)"></div>
-        <div>LocalNewZ</div>
-        <div>LocalNewZ6</div>  
-        <div>LocalNewZ7</div>
-        <div>LocalNewZ8</div>
-        <div>LocalNewZ9</div>  
-        <div>LocalNewZ10</div>
-        <div>LocalNewZ11</div>
-        <div>LocalNewZ12</div>  
+        <div class="p4"><img class="playbtn" src="../images/playbtn.png" @click="play(4)"></div>  
    </div>
      </div>
  </div>` }
