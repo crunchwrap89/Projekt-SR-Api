@@ -20,7 +20,6 @@ function getSongList(input) {
         .then(json => json.songlist.song[1])
 }
 
-
 // function getNewsPrograms(input) {
 //     return fetch(input)
 //         .then(resp =>  {
@@ -29,8 +28,7 @@ function getSongList(input) {
 //             }
 //             return resp.json()
 //         })
-//         .then(json => json.episodes)
-        
+//         .then(json => json.episodes)        
 // }
 
 export default {
@@ -67,6 +65,10 @@ export default {
 
     showNewsPrograms() {
         return getData('http://api.sr.se/api/v2/news/episodes?format=json')
+    },
+
+    getDocumentaries() {
+        return getData('http://api.sr.se/api/v2/podfiles?programid=1646&format=json')
     }
 
 }
