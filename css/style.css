@@ -44,7 +44,7 @@ nav ul.router-link-exact-active {
 
 }
 nav ul.col.exact-active.active {
-    /* color: #85DCBA; */
+    color: #85DCBA;
 }
 .navright {
     display: flex;
