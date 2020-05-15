@@ -14,36 +14,18 @@ body {
 /* Navigation bar */
 nav {
     background-color: black;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 80px;
     display: flex;
     align-items: center;
+    position: relative;
+    height: 80px;
     transition: top 0.3s;
 
 }
 .navleft{
     display: flex;
-}
-nav ul {
-    list-style-type: none;
-    color:  white;
-    margin: 0px;
-    display: inline-block;
-    background-color: black;
-}
-nav ul:hover,
-nav ul.router-link-active,
-nav ul.router-link-exact-active {
-    cursor: pointer;
-    transition: 0.3s;
-    color: #85DCBA;
-
-}
-nav ul.col.exact-active.active {
-    color: #85DCBA;
+    align-items: center;
+    position: relative;
+    margin-right: auto;
 }
 .navright {
     display: flex;
@@ -51,18 +33,39 @@ nav ul.col.exact-active.active {
     position: relative;
     margin-left: auto;
 }
+nav a {
+    list-style-type: none;
+    text-decoration: none;
+    color:  white;
+    margin: auto;
+    background-color: black;
+}
+nav ul li {
+    float: left;
+    margin: 10px;
+}
+nav a:hover,
+nav a.router-link-active,
+nav a.router-link-exact-active {
+    cursor: pointer;
+    transition: 0.3s;
+    color: #85DCBA;
 
+}
+nav a.col.exact-active.active {
+    color: #85DCBA;
+}
 nav .playing {
     color: white;
-    margin: 10px;
+    margin: auto;
 }
 
 nav .playingimg {
     width: 75px;
-    margin: 10px;
+    margin: auto;
 }
 nav .ljudspelare {
-    margin: 10px; 
+    margin: auto;
     filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
 }
 
@@ -239,11 +242,14 @@ footer ul li:hover {
         display: flex;
         flex-direction: column;
         height: 130px;
+        
     }
-    .banner {
-        margin-top: 50px;
+    nav a {
+        margin: 0px;
     }
+
     .flex-container {
         flex-direction: column;
       }
   }
+

@@ -13,10 +13,12 @@
         <div id="app">
           <nav id="navbar">
             <div class="navleft">
-                 <router-link tag="ul" class="col" class-active="active" to="/">News</router-link>
-                 <router-link tag="ul" class="col" class-active="active" to="/radio">Live Radio</router-link>
-                 <router-link tag="ul" class="col" class-active="active" to="/archive">Archive</router-link>
-                 <router-link tag="ul" class="col" class-active="active" to="/about">About</router-link>
+              <ul>
+                <li><router-link tag="a" class="col" class-active="active" to="/">News</router-link></li>
+                <li><router-link tag="a" class="col" class-active="active" to="/radio">Live Radio</router-link></li>
+                <li><router-link tag="a" class="col" class-active="active" to="/archive">Archive</router-link></li>
+                <li><router-link tag="a" class="col" class-active="active" to="/about">About</router-link></li>
+              </ul>
             </div>
             <div class="navright">
                  <h2 class="playing">Now playing: </h2> <img class="playingimg" id="nuspelas" src="">
