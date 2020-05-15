@@ -175,11 +175,12 @@ footer ul li:hover {
   }
   .playbtn {
       height: 100%;
+      width: 100%;
       opacity: 0.0;
   }
   .playbtn:hover {
     cursor: pointer;
-    opacity: 0.95;
+    opacity: 0.9;
     transition: 0.3s;
     
 }
