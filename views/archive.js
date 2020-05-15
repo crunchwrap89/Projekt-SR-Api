@@ -2,7 +2,7 @@ export default { template:
     `<div class="outerdiv">
          <div class="innerdiv">
             
-            <h2>Gamla sändningar</h2>
+            <h1>Gamla sändningar</h1>
             <div class="flex-container">
                   <div>EkonomiEkot</div>
                   <div>Trafiknytt</div>
@@ -13,7 +13,7 @@ export default { template:
                   <div>LocalNewZ7</div>
                   <div>LocalNewZ8</div> 
               </div>
-              <h2>Podcasts</h2>
+              <h1>Podcasts</h1>
               <div class="flex-container2">
                   <div>P3 Dystopia</div>
                   <div>P3 Dokumentär</div>

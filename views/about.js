@@ -1,7 +1,7 @@
 export default { template: `<div class="outerdiv">
                              <div class="innerdiv2">
                               <div class="vansterdiv">
-                            <h2> Rubrik </h2>
+                            <h1> Rubrik </h1>
                             <p> 
                               Lorem ipsum dolor sit amet, ex erant oratio iuvaret sea, sit ne dicit utinam molestie, ne sit nusquam percipit. Vis ea adhuc nonumy facilisi, tractatos splendide suscipiantur et mel. Errem sapientem at mel, mel cu vocent epicurei persecuti. Pri tempor copiosae platonem at, fastidii mediocritatem in pro, vix iudico integre prompta cu.
                               Nulla mazim viris sed cu, sententiae definitionem eam in. Ei nam oratio legendos, assum essent latine sed ea, has ei tantas pertinacia. Tempor persius salutatus te his, no primis ceteros his. Cu pri dicat dicit conclusionemque, dicat deleniti scribentur eam no. Sonet choro no vis, eum ad wisi aperiri albucius, qui quis sale scaevola eu.
@@ -17,7 +17,7 @@ export default { template: `<div class="outerdiv">
                             </p>
                             </div>
                             <div class="hogerdiv">
-                            <h2>Rubrik 2</h2>
+                            <h1>Rubrik 2</h1>
                             <p>
                             Lorem ipsum dolor sit amet, ex erant oratio iuvaret sea, sit ne dicit utinam molestie, ne sit nusquam percipit. Vis ea adhuc nonumy facilisi, tractatos splendide suscipiantur et mel. Errem sapientem at mel, mel cu vocent epicurei persecuti. Pri tempor copiosae platonem at, fastidii mediocritatem in pro, vix iudico integre prompta cu.
                             Nulla mazim viris sed cu, sententiae definitionem eam in. Ei nam oratio legendos, assum essent latine sed ea, has ei tantas pertinacia. Tempor persius salutatus te his, no primis ceteros his. Cu pri dicat dicit conclusionemque, dicat deleniti scribentur eam no. Sonet choro no vis, eum ad wisi aperiri albucius, qui quis sale scaevola eu.
