@@ -22,7 +22,8 @@ export default {
                       } );
                       div.className="dAvsnitt"
                       roffel.appendChild(div)
-                      div.style.backgroundImage=result.episodes[i].imageurl
+                      div.style.backgroundImage="url(" + result.episodes[i].imageurl + ")"
+                      
                 }
             })
         }
