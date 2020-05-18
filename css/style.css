@@ -250,7 +250,11 @@ footer ul li:hover {
     --color-accent: #12cdea;
     --font-color: #ffffff;
  }
-
+.dAvsnitt {
+    background-image: url("../images/playbtn.png");
+    width: 50px;
+    height: 50px;
+}
  
 
 /* if page goes below 600px change to these settings */
