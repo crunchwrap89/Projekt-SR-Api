@@ -8,7 +8,7 @@ export default {
         getDystopia() {
             let outerdiv = document.getElementById('superId')
             let d = EventService.getDystopia()
-            let i = document.getElementById("nuspelas")
+            let img = document.getElementById("nuspelas")
             let l = document.getElementById("ljudspelare")
             d.then(function (result) {
                 for(let i = 0; i < result.episodes.length; i++) {
@@ -16,7 +16,7 @@ export default {
                     div.innerText = result.episodes[i].title
                     div.addEventListener( 'click', function(){
                         l.setAttribute("src", result.episodes[i].downloadpodfile.url)
-                        i.setAttribute("src", result.episodes[i].imageurl)
+                        img.setAttribute("src", result.episodes[i].imageurl)
                         div.className('dAvsnitt')
 
                       } );
