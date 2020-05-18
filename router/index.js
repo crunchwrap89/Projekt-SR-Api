@@ -5,6 +5,7 @@ import About from '../views/about.js'
 import Dokumentar from '../views/dokumentar.js'
 import Dystopia from '../views/dystopia.js'
 import EkonomiEkot from '../views/ekonomiEkot.js'
+import Radiosporten from '../views/radiosporten.js'
 
 export default new VueRouter({
     routes: [ 
@@ -14,7 +15,8 @@ export default new VueRouter({
       { path: '/about', component: About },
       { path: '/dokumentar', component: Dokumentar },
       { path: '/dystopia', component: Dystopia },
-      { path: '/ekonomiEkot', component: EkonomiEkot }  
+      { path: '/ekonomiEkot', component: EkonomiEkot }, 
+      { path: '/radiosporten', component: Radiosporten }
   ],
   linkActiveClass: "active",
   linkExactActiveClass: "exact-active",

@@ -9,7 +9,9 @@ export default {
                   <div>
                   <router-link to="/ekonomiEkot">Ekonomiekot</router-link>
                   </div>
-                  <div>Trafiknytt</div>
+                  <div>
+                  <router-link to="/radiosporten">Radiosporten</router-link>
+                  </div>
                   <div>Roffelnews</div>  
                   <div>osv</div>
               </div>
