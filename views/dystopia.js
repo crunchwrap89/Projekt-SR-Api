@@ -15,16 +15,12 @@ export default {
                     p.innerText = result.episodes[i].title
                     p.addEventListener( 'click', function(){
                         l.setAttribute("src", result.episodes[i].downloadpodfile.url)
-                        
-
                       } );
                     outerdiv.appendChild(p)
                 }
             })
-        }
-        
-    },
-    
+        }        
+    },  
     template: 
 `<div class="outerdiv" id="superId">
      <div class="innerdiv">
