@@ -12,6 +12,15 @@ export default {
                   <div>
                   <router-link to="/radiosporten">Radiosporten</router-link>
                   </div>
+                  <div>
+                  <router-link to="/samiskaNyheter">Samiska Nyheter</router-link>
+                  </div>
+                  <div>
+                  <router-link to="/radiofinska">Finska Nyheter</router-link>
+                  </div>
+                  <div>
+                  <router-link to="/kulturnytt">Kulturnytt</router-link>
+                  </div>
                   <div>Roffelnews</div>  
                   <div>osv</div>
               </div>

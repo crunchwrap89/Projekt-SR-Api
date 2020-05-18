@@ -6,6 +6,9 @@ import Dokumentar from '../views/dokumentar.js'
 import Dystopia from '../views/dystopia.js'
 import EkonomiEkot from '../views/ekonomiEkot.js'
 import Radiosporten from '../views/radiosporten.js'
+import Radiofinska from '../views/radiofinska.js'
+import SamiskaNyheter from '../views/samiskaNyheter.js'
+import Kulturnytt from '../views/kulturnytt.js'
 
 export default new VueRouter({
     routes: [ 
@@ -16,7 +19,10 @@ export default new VueRouter({
       { path: '/dokumentar', component: Dokumentar },
       { path: '/dystopia', component: Dystopia },
       { path: '/ekonomiEkot', component: EkonomiEkot }, 
-      { path: '/radiosporten', component: Radiosporten }
+      { path: '/radiosporten', component: Radiosporten },
+      { path: '/radiofinska', component: Radiofinska },
+      { path: '/samiskaNyheter', component: SamiskaNyheter },
+      { path: '/kulturnytt', component: Kulturnytt }
   ],
   linkActiveClass: "active",
   linkExactActiveClass: "exact-active",
