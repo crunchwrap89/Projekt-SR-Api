@@ -8,6 +8,7 @@ export default {
         getRadiosport() {
             let outerdiv = document.getElementById('superId')
             let d = EventService.getRadiosport()
+            let img = document.getElementById("nuspelas")
             let l = document.getElementById("ljudspelare")
             d.then(function (result) {
                 for(let i = 0; i < result.episodes.length; i++) {
@@ -15,6 +16,7 @@ export default {
                     p.innerText = result.episodes[i].downloadpodfile.title
                     p.addEventListener( 'click', function(){
                         l.setAttribute("src", result.episodes[i].downloadpodfile.url)
+                        img.setAttribute("src", result.episodes[i].imageurltemplate)
                       } );
                     outerdiv.appendChild(p)
                 }
