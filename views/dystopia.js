@@ -6,7 +6,7 @@ export default {
     },
     methods: {
         getDystopia() {
-            let outerdiv = document.getElementById('superId')
+            let roffel = document.getElementById('superId')
             let d = EventService.getDystopia()
             let img = document.getElementById("nuspelas")
             let l = document.getElementById("ljudspelare")
@@ -14,13 +14,15 @@ export default {
                 for(let i = 0; i < result.episodes.length; i++) {
                     let div = document.createElement('div')
                     div.innerText = result.episodes[i].title
+                    
                     div.addEventListener( 'click', function(){
                         l.setAttribute("src", result.episodes[i].downloadpodfile.url)
                         img.setAttribute("src", result.episodes[i].imageurl)
-                        div.className('dAvsnitt')
 
                       } );
-                    outerdiv.appendChild(div)
+                      div.className="dAvsnitt"
+                      roffel.appendChild(div)
+                    
                 }
             })
         }
@@ -28,8 +30,11 @@ export default {
     },
     
     template: 
-`<div class="outerdiv" id="superId">
+`<div class="outerdiv">
      <div class="innerdiv">
+           <h1> Dystopia avsnitt </h1>
+       <div class="flex-container" id="superId">
+       </div>
      </div>
  </div>` 
 }
