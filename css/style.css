@@ -2,7 +2,7 @@ body {
     margin:0px;
     text-align: center;
     display:block;
-    background: whitesmoke;
+    background: var(--color-secondary);
     background-size: 100% 100%;
     font-family: "Verdana", Helvetica,sans-serif;
     font-style: normal;
@@ -13,7 +13,7 @@ body {
 
 /* Navigation bar */
 nav {
-    background-color: black;
+    background-color: var(--color-primary);
     display: flex;
     align-items: center;
     position: relative;
@@ -238,6 +238,20 @@ footer ul li:hover {
     background-size: cover;
     background-position: center;
 }
+
+.theme-light {
+    --color-primary: black;
+    --color-secondary: whitesmoke;
+    --color-accent: #85DCBA;
+    --font-color: black;
+ }.theme-dark {
+    --color-primary: whitesmoke;
+    --color-secondary: #243133;
+    --color-accent: #12cdea;
+    --font-color: #ffffff;
+ }
+
+ 
 
 /* if page goes below 600px change to these settings */
   @media screen and (max-width: 600px) {   
