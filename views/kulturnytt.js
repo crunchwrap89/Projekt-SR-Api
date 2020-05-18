@@ -2,12 +2,12 @@ import EventService from "../services/EventService.js"
 
 export default {
     mounted() {
-        this.getFinska()
+        this.getKulturnytt()
     },
     methods: {
-        getFinska() {
+        getKulturnytt() {
             let outerdiv = document.getElementById('nyttId')
-            let d = EventService.getFinska()
+            let d = EventService.getKulturnytt()
             let l = document.getElementById("ljudspelare")
             let img = document.getElementById("nuspelas")
             d.then(function (result) {
