@@ -24,8 +24,8 @@ export default {
                         
 
                       } );
+                      div.className="dAvsnitt"
                     roffel.appendChild(div)
-                    div.className="dAvsnitt"
                     
                 }
             })
@@ -42,11 +42,3 @@ export default {
      </div>
  </div>` 
 }
-
-// `<div class="outerdiv">
-//      <div class="innerdiv">
-//            <h1> Dystopia avsnitt </h1>
-//        <div class="flex-container" id="superId">
-//        </div>
-//      </div>
-//  </div>` 
