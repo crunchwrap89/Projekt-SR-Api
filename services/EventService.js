@@ -81,6 +81,10 @@ export default {
 
     getRadiosport() {
         return getData('http://api.sr.se/api/v2/episodes/index?programid=2895&format=json')
+    },
+
+    getFinska() {
+        return getData('http://api.sr.se/api/v2/episodes/index?programid=185&format=json')
     }
 
 }
