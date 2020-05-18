@@ -1,11 +1,14 @@
 
-export default { template: 
-    `<div class="outerdiv">
+export default {
+    template:
+        `<div class="outerdiv">
          <div class="innerdiv">
             
             <h1>Gamla sändningar</h1>
             <div class="flex-container">
-                  <div>EkonomiEkot</div>
+                  <div>
+                  <router-link to="/ekonomiEkot">Ekonomiekot</router-link>
+                  </div>
                   <div>Trafiknytt</div>
                   <div>Roffelnews</div>  
                   <div>osv</div>
