@@ -22,7 +22,7 @@ export default {
                       } );
                       div.className="dAvsnitt"
                       roffel.appendChild(div)
-                    
+                      div.style.backgroundImage=result.episodes[i].imageurl
                 }
             })
         }
@@ -38,3 +38,4 @@ export default {
      </div>
  </div>` 
 }
+
