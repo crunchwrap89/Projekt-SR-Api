@@ -17,8 +17,7 @@ export default {
                     p.innerText = titeln
                     if (p.innerText.charAt(10) === "t") {
                         p.innerText = titeln.slice(0, 10) + titeln.slice(11, titeln.length)
-                    } 
-                    
+                    }                     
                     p.addEventListener( 'click', function(){
                         l.setAttribute("src", result.episodes[i].downloadpodfile.url)
                         img.setAttribute("src", result.episodes[i].imageurl)
