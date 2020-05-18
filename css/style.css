@@ -8,7 +8,7 @@ body {
     font-style: normal;
     letter-spacing: .05em;
     line-height: normal;
-    color:  black;
+    color:  var(--font-color);
 }
 
 /* Navigation bar */
@@ -75,12 +75,12 @@ nav .ljudspelare {
     display:inline-block;
     text-align: center;
     margin:0px auto;
-    background-color: whitesmoke;
+    background-color: var(--color-secondary);
     color: black;
     background-size: 100% 100%;
 }
 h1 {
-    color: black;
+    color: var(--font-color);
 }
 
 /* center */
@@ -92,24 +92,24 @@ h1 {
 }
 .innerdiv {
     text-align: left;
-    background-color: whitesmoke;
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: column;
 }
 .innerdiv2 {
     text-align: center;
-    background-color: whitesmoke;
+    background-color: var(--color-secondary);
     display: flex;
     flex-direction: row;
 }
 .vansterdiv {
     text-align: left;
-    background-color: whitesmoke;
+    background-color: var(--color-secondary);
     width: 50%;
 }
 .hogerdiv {
     text-align: left;
-    background-color: whitesmoke;
+    background-color: var(--color-secondary);
     width: 50%;
     margin: 50px;
 }
@@ -245,10 +245,10 @@ footer ul li:hover {
     --font-color: black;
  }
  .theme-dark {
-    --color-primary: whitesmoke;
+    --color-primary: black;
     --color-secondary: #243133;
     --color-accent: #12cdea;
-    --font-color: #ffffff;
+    --font-color: whitesmoke;
  }
  .container {
     display: flex;
