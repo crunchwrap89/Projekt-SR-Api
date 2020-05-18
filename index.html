@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="theme-light">
     <head>
         <title>SR Projekt - API</title>
         <meta charset="utf-8">
@@ -31,7 +31,10 @@
             <router-view class="center"></router-view> 
             
             <p>roffel</p>
-              
+            <label id="switch" class="switch">
+              <input type="checkbox" onchange="toggleTheme()" id="slider">
+              <span class="slider round"></span>
+          </label>
         </div>
         <footer>
           <ul>
