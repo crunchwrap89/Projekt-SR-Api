@@ -73,6 +73,10 @@ export default {
 
     getDystopia() {
         return getData('http://api.sr.se/api/v2/episodes/index?programid=5188&format=json')
+    },
+
+    getEkonomiEkot() {
+        return getData('http://api.sr.se/api/v2/episodes/index?programid=178&format=json')
     }
 
 }
