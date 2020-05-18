@@ -157,18 +157,14 @@ footer ul li:hover {
   .flex-container2 {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 25px;
     
   }
   
   .flex-container2 > div {
-    background-color: whitesmoke;
     width: 230px;
     height: 200px;
-    margin: 10px;
-    text-align: center;
-    line-height: 75px;
-    font-size: 30px;
+    margin: 25px;
   }
   .playbtn {
       height: 100%;
