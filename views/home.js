@@ -5,15 +5,19 @@ export default {
     playNewsChannel(channelId) {
       let e = EventService.showNewsPrograms()
       let p = document.getElementById("ljudspelare")
+      let img = document.getElementById("nuspelas")
       e.then((result) => {
         for (let i = 0; i < result.episodes.length; i++) {
           if (result.episodes[i].program.id === channelId) {
+            img.setAttribute("src", result.episodes[i].imageurl)
             try {
               p.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)
             } catch {
               p.setAttribute("src", result.episodes[i].listenpodfile.url)
             }
+
           }
+          
         }
       })
     },
