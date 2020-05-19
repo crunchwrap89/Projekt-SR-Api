@@ -45,4 +45,5 @@ export default {
                             <div class="n5"><img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(2327)">Samiska Nyheter</div>
                             </div>
                             </div>
+                            </div>
                           </div>` }
