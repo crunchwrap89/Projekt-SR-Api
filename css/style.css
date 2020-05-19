@@ -254,12 +254,14 @@ footer ul li:hover {
     --color-secondary: whitesmoke;
     --color-accent: #85DCBA;
     --font-color: black;
+    --shadow-color:white;
  }
  .theme-dark {
     --color-primary: black;
     --color-secondary: #243133;
     --color-accent: #12cdea;
     --font-color: whitesmoke;
+    --shadow-color:black;
  }
   /* The switch - the box around the slider */
   .switch {
@@ -337,9 +339,7 @@ footer ul li:hover {
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
-}
-.dAvsnitt p {
-    background-color: indigo;
+    text-shadow: 1px 1px 1px var(--shadow-color);
 }
  
 
