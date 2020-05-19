@@ -13,6 +13,7 @@ export default {
             d.then(function (result) {
                 for(let i = 0; i < result.episodes.length; i++) {
                     let div = document.createElement('div')
+                    //Ljudfilen kan ligga på två olika platser i jsonsvaret , därför prövas båda i en try catch.
                     try {
                         div.innerText = result.episodes[i].downloadpodfile.title
                         div.addEventListener( 'click', function(){
