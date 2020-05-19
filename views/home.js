@@ -36,6 +36,7 @@ export default {
 
                             </div>
                             <div class="hogerdiv">
+                            <h1> Senaste nytt </h1>
                             <div class="flex-container">
                             <div class="n1"><img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(478)">Kulturnytt</div>
                             <div class="n2"><img class="playbtn" src="../images/playbtn.png" @click="playNewsChannel(185)">Sveriges Radio Finska</div>

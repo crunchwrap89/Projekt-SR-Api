@@ -111,7 +111,7 @@ h1 {
     text-align: left;
     background-color: var(--color-secondary);
     width: 50%;
-    margin: 50px;
+    margin-left: 50px;
 }
 
 /* audioplayer */
