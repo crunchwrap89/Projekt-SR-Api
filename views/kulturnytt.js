@@ -19,7 +19,7 @@ export default {
                             l.setAttribute("src", result.episodes[i].downloadpodfile.url)
                             img.setAttribute("src", result.episodes[i].imageurl)
                           } );
-                    } catch {
+                    } catch (error) {
                         div.innerText = result.episodes[i].title
                         div.addEventListener( 'click', function(){
                             l.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)

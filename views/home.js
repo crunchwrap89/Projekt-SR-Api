@@ -10,9 +10,10 @@ export default {
         for (let i = 0; i < result.episodes.length; i++) {
           if (result.episodes[i].program.id === channelId) {
             img.setAttribute("src", result.episodes[i].imageurl)
+            //Ljudfilen kan ligga på två olika platser i jsonsvaret , därför prövas båda i en try catch.
             try {
               p.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)
-            } catch {
+            } catch (error) {
               p.setAttribute("src", result.episodes[i].listenpodfile.url)
             }
 
