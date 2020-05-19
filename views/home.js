@@ -2,6 +2,9 @@ import EventService from '../services/EventService.js'
 
 export default {
   methods: {
+    // Metoden tar emot ett kanalId som argument. Metoden hämtar sedan en lista över program med hjälp av showNewsPrograms i EventService
+    // for loopen loopar igenom alla avsnitt tills den hittar ett program som har ett id som överenstämmer med det som angavs i argumentet.
+    // sedan lägger metoden till programmet i frågas ljudfil i spearen och byter ut bilden i "spelas nu".
     playNewsChannel(channelId) {
       let e = EventService.showNewsPrograms()
       let p = document.getElementById("ljudspelare")
