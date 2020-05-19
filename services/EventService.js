@@ -1,4 +1,4 @@
-//Metoden hämtar information ifrån JSON api och returnerar resultatet. API:t måste ge svar i json
+// Metoden hämtar information ifrån API:t som matas in som argument i metoden och returnerar resultatet. API:t måste ge svar i json
 function getData(input) {
     return fetch(input)
         .then(resp =>  {
@@ -20,7 +20,7 @@ function getSongList(input) {
         })
         .then(json => json.songlist.song[1])
 }
-
+// Hämtar API:t för p1, p2, p3 eller p4 med hjälp av getData beroende på vad man skriver in för siffra.
 export default {
     play(channel) {
         if(channel === 1) {
@@ -36,7 +36,8 @@ export default {
             return getData('http://api.sr.se/api/v2/channels/212?format=json') 
         }
     },
-
+    
+    //Nedanstående metoder hämtar API från respektive kanal med hjälp av metoden getData.
     showNewsPrograms() {
         return getData('http://api.sr.se/api/v2/news/episodes?format=json')
     },
