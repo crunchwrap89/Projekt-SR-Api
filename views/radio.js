@@ -5,7 +5,8 @@ import EventService from '../services/EventService.js'
 export default {
 
      methods: {
-      
+     // Metoden hämtar en radiokanal beroende på vilken siffra man skickar in i EventService.play()
+     // Metoden läger sedan till ljudfilen i ljudspelare och lägger till en ny bild i "nuspelas" 
           play(radiokanal) {
                let p = document.getElementById("ljudspelare")
                let i = document.getElementById("nuspelas")
