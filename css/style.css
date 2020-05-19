@@ -232,6 +232,18 @@ footer ul li:hover {
     background-size: cover;
     background-position: center;
 }
+.dystopia {
+    background-image: url("https://static-cdn.sr.se/sida/images/5188/8021080a-84db-4ea2-912b-624814c60f68.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.p3dok {
+    background-image: url("https://static-cdn.sr.se/sida/images/2519/c3ffd637-4bf0-41a1-961f-28abdc067398.jpg?preset=api-default-square");
+    background-repeat:no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 .arkivknapp {
     background-color: black;
     color: white;

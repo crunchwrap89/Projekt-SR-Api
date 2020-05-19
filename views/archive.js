@@ -24,10 +24,10 @@ export default {
               </div>
               <h1>Podcasts</h1>
               <div class="flex-container2">
-                  <div>
+                  <div class="dystopia">
                   <router-link to="/dystopia" class="arkivknapp">P3 Dystopia</router-link>
                   </div>
-                  <div>
+                  <div class="p3dok">
                   <router-link to="/dokumentar" class="arkivknapp">P3 Dokumentär</router-link>
                   </div>
               </div>
