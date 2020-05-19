@@ -6,23 +6,21 @@ export default {
             
             <h1>Gamla sändningar</h1>
             <div class="flex-container">
-                  <div>
+                  <div class="n4">
                   <router-link to="/ekonomiEkot">Ekonomiekot</router-link>
                   </div>
-                  <div>
+                  <div class="n3">
                   <router-link to="/radiosporten">Radiosporten</router-link>
                   </div>
-                  <div>
+                  <div class="n5">
                   <router-link to="/samiskaNyheter">Samiska Nyheter</router-link>
                   </div>
-                  <div>
+                  <div class="n2">
                   <router-link to="/radiofinska">Finska Nyheter</router-link>
                   </div>
-                  <div>
+                  <div class="n1">
                   <router-link to="/kulturnytt">Kulturnytt</router-link>
                   </div>
-                  <div>Roffelnews</div>  
-                  <div>osv</div>
               </div>
               <h1>Podcasts</h1>
               <div class="flex-container2">
@@ -32,8 +30,6 @@ export default {
                   <div>
                   <router-link to="/dokumentar">P3 Dokumentär</router-link>
                   </div>
-                  <div>P3 Roffel</div>  
-                  <div>Poddroffel</div> 
               </div>
          </div>
      </div>` }
