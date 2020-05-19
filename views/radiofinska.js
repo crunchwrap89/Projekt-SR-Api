@@ -6,34 +6,39 @@ export default {
     },
     methods: {
         getFinska() {
-            let outerdiv = document.getElementById('nyttId')
+            let roffel = document.getElementById('nyttId')
             let d = EventService.getFinska()
             let l = document.getElementById("ljudspelare")
             let img = document.getElementById("nuspelas")
             d.then(function (result) {
                 for(let i = 0; i < result.episodes.length; i++) {
-                    let p = document.createElement('div')
+                    let div = document.createElement('div')
                     try {
-                        p.innerText = result.episodes[i].downloadpodfile.title
-                        p.addEventListener( 'click', function(){
+                        div.innerText = result.episodes[i].downloadpodfile.title
+                        div.addEventListener( 'click', function(){
                             l.setAttribute("src", result.episodes[i].downloadpodfile.url)
                             img.setAttribute("src", result.episodes[i].imageurl)
                           } );
                     } catch {
-                        p.innerText = result.episodes[i].title
-                        p.addEventListener( 'click', function(){
+                        div.innerText = result.episodes[i].title
+                        div.addEventListener( 'click', function(){
                             l.setAttribute("src", result.episodes[i].broadcast.broadcastfiles[0].url)
                             img.setAttribute("src", result.episodes[i].imageurl)
                           } );
                     }
-                    outerdiv.appendChild(p)
+                    div.className="dAvsnitt"
+                    div.style.backgroundImage="url(" + result.episodes[i].imageurl + ")"  
+                    roffel.appendChild(div)
                 }
             })
         }        
     },  
     template: 
-`<div class="outerdiv" id="nyttId">
-     <div class="innerdiv">
-     </div>
- </div>` 
+    `<div class="outerdiv">
+    <div class="innerdiv">
+          <h1> Finska nyheter </h1>
+      <div class="flex-container" id="nyttId">
+      </div>
+    </div>
+</div>` 
 }
