@@ -1,3 +1,4 @@
+//Metoden hämtar information ifrån JSON api och returnerar resultatet. API:t måste ge svar i json
 function getData(input) {
     return fetch(input)
         .then(resp =>  {
