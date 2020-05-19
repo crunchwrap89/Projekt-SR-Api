@@ -20,17 +20,6 @@ function getSongList(input) {
         .then(json => json.songlist.song[1])
 }
 
-// function getNewsPrograms(input) {
-//     return fetch(input)
-//         .then(resp =>  {
-//             if (!resp.ok) {
-//                 throw new Error(resp.statusText)
-//             }
-//             return resp.json()
-//         })
-//         .then(json => json.episodes)        
-// }
-
 export default {
     play(channel) {
         if(channel === 1) {
