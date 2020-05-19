@@ -6,6 +6,9 @@ export default {
     },
     methods: {
         getKulturnytt() {
+        // Metoden hämtar Kulturnytt med hjälp av metoden getKulturnytt i EventService.
+        // Metoden skriver sedan ut en lista på de 10 senaste avsnitten och lägger till dem på sidan. Metoden lägger även till 
+        // en klickfunktion för varje element som spelar upp respektive avsnitt och byter ut bilden i "spelas nu"
             let roffel = document.getElementById('nyttId')
             let d = EventService.getKulturnytt()
             let img = document.getElementById("nuspelas")

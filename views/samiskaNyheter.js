@@ -6,8 +6,8 @@ export default {
     },
     methods: {
         // Metoden hämtar kanalen Samiska Nyheter med hjälp av metoden getSamiskaNyheter i EventService.
-        // Metoden skriver sedan ut en lista på de 10 senaste avsnitten av Samiska nyheter på sidan och lägger till dem på sidan. Metoden lägger även till 
-        // en klickfunktion för varje element som spelar ut respektive avsnitt och byter ut bilden i "spelas nu"
+        // Metoden skriver sedan ut en lista på de 10 senaste avsnitten och lägger till dem på sidan. Metoden lägger även till 
+        // en klickfunktion för varje element som spelar upp respektive avsnitt och byter ut bilden i "spelas nu"
         getSamiskaNyheter() {
             let roffel = document.getElementById('nyttId')
             let d = EventService.getSamiskaNyheter()

@@ -10,6 +10,9 @@ export default {
     
     
         getDocumentaries() {
+        // Metoden hämtar p3 Dokumentär med hjälp av metoden getDocumentaries i EventService.
+        // Metoden skriver sedan ut en lista på de 10 senaste avsnitten och lägger till dem på sidan. Metoden lägger även till 
+        // en klickfunktion för varje element som spelar upp respektive avsnitt och byter ut bilden i "spelas nu"
             let roffel = document.getElementById('kuk')
             let d = EventService.getDocumentaries()
             let img = document.getElementById("nuspelas")

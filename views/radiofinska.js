@@ -6,6 +6,10 @@ export default {
     },
     methods: {
         getFinska() {
+        // Metoden hämtar radio finsak med hjälp av metoden getFinska i EventService.
+        // Metoden skriver sedan ut en lista på de 10 senaste avsnitten och lägger till dem på sidan. Metoden lägger även till 
+        // en klickfunktion för varje element som spelar upp respektive avsnitt och byter ut bilden i "spelas nu"
+
             let roffel = document.getElementById('nyttId')
             let d = EventService.getFinska()
             let l = document.getElementById("ljudspelare")
