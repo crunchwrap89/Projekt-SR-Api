@@ -18,6 +18,7 @@ nav {
     align-items: center;
     position: relative;
     height: 80px;
+    width: 100%;
     transition: top 0.3s;
 
 }
@@ -127,7 +128,6 @@ audio {
 footer {
     background: black;
     color: rgb(230, 230, 230);
-    padding: 20px;
     width: 100%;
     text-align: center;
     display: inline-block;
