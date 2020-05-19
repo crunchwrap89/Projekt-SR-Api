@@ -232,6 +232,10 @@ footer ul li:hover {
     background-size: cover;
     background-position: center;
 }
+.arkivknapp {
+    background-color: black;
+    color: white;
+}
 
 .theme-light {
     --color-primary: black;
@@ -342,6 +346,9 @@ footer ul li:hover {
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
+}
+.dAvsnitt p {
+    background-color: indigo;
 }
  
 
