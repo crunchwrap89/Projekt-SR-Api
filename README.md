@@ -4,7 +4,7 @@
 This is a Vue.js application that uses Sveriges Radio's open API (version 2) to stream live radio, fetch images, podcasts and archived news in audio format.
 For more information about the API please read: https://sverigesradio.se/api/documentation/v2/index.html
 
-The application is responsive, has a theme switch function with css variables.
+The application is also responsive and has a theme switch function with css variables.
 The application has passed tests on Chrome, Firefox, Safari and Edge with several resolution varieties.
 
 ------To run the application follow below instructions.------
