@@ -10,7 +10,7 @@ The application has passed tests on Chrome, Firefox, Safari and Edge with severa
 ------To run the application follow below instructions.------
 
 1. Clone or download the repository to your hard drive.
-2. Start Visual Studio Code.
+2. Start Visual Studio Code.  (can be downloaded from https://code.visualstudio.com/ )
 3. Press File - Open Folder. Choose the "Project-SR-Api" folder.
 4. Right click Index.html (within the explorer in Visual Studio Code).
 5. Press "Open with Live Server". 
