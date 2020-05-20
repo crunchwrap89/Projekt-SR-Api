@@ -14,7 +14,7 @@ The application has passed tests on Chrome, Firefox, Safari and Edge with severa
 3. Press File - Open Folder. Choose the "Project-SR-Api" folder.
 4. Right click Index.html (within the explorer in Visual Studio Code).
 5. Press "Open with Live Server". 
-- The application will now open automatically within your default browser.
+- The application will now open automatically within your default web browser.
 
 
 If you do not have an option to choose "Open with Live Server" you need to install this extension within Visual Studio Code.
