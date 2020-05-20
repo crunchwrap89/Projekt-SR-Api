@@ -18,6 +18,6 @@ The application has passed tests on Chrome, Firefox, Safari and Edge with severa
 
 
 If you do not have an option to choose "Open with Live Server" you need to install this extension within Visual Studio Code.
-To do this, go to the "Extensions" tab within Visual Studio Code and search for "Live Server" and press install. 
+To do this, go to the "Extensions" tab within Visual Studio Code and search for "Live Server" and choose the one by publisher Ritwick Dey. Press install. 
 
 
