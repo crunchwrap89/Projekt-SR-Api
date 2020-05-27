@@ -20,7 +20,6 @@ nav {
     height: 80px;
     width: 100%;
     transition: top 0.3s;
-
 }
 .navleft{
     display: flex;
@@ -51,7 +50,6 @@ nav a.router-link-exact-active {
     cursor: pointer;
     transition: 0.3s;
     color: #85DCBA;
-
 }
 nav a.col.exact-active.active {
     color: #85DCBA;
@@ -60,7 +58,6 @@ nav .playing {
     color: white;
     margin: auto;
 }
-
 nav .playingimg {
     width: 75px;
     margin: auto;
@@ -143,22 +140,20 @@ footer ul li:hover {
       cursor: pointer;
 }
 
+/* flexcontainers */
 .flex-container {
     display: flex;
     flex-wrap: wrap;
 }
-  
 .flex-container > div {
     width: 230px;
     height: 200px;
     margin: 25px;
-
 }
 .flex-container2 {
     display: flex;
     flex-wrap: wrap;
     margin: 25px;
-    
 }
 .flex-container2 > div {
     width: 230px;
@@ -215,9 +210,9 @@ footer ul li:hover {
     transform: scale(1.8);
 }
 .playbtn {
-      height: 100%;
-      width: 100%;
-      opacity: 0.0;
+    height: 100%;
+    width: 100%;
+    opacity: 0.0;
 }
 .playbtn:hover {
     cursor: pointer;
@@ -225,7 +220,7 @@ footer ul li:hover {
     transition: 0.2s;
     
 }
-
+/* buttons for radiostations */
 .p1 {
     background-image: url("https://static-cdn.sr.se/sida/images/132/2186745_512_512.jpg?preset=api-default-square");
     background-repeat:no-repeat;
@@ -297,37 +292,38 @@ footer ul li:hover {
     color: white;
 }
 
+/* css variables for themeswitch */
 .theme-light {
     --color-primary: black;
     --color-secondary: whitesmoke;
     --color-accent: #85DCBA;
     --font-color: black;
     --shadow-color:white;
- }
- .theme-dark {
+}
+.theme-dark {
     --color-primary: black;
     --color-secondary: #243133;
     --color-accent: #12cdea;
     --font-color: whitesmoke;
     --shadow-color:black;
- }
-  /* The switch - the box around the slider */
-  .switch {
+}
+/* The switch - the box around the slider */
+.switch {
     position: relative;
     display: inline-block;
     width: 60px;
     height: 34px;
-  }
+}
   
-  /* Hide default HTML checkbox */
-  .switch input {
+/* Hide default HTML checkbox */
+.switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+}
   
-  /* The slider */
-  .slider {
+/* The slider */
+.slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -337,9 +333,8 @@ footer ul li:hover {
     background-color: #ccc;
     -webkit-transition: 0.4s;
     transition: 0.4s;
-  }
-  
-  .slider:before {
+}
+.slider:before {
     position: absolute;
     content: "";
     height: 40px;
@@ -355,96 +350,89 @@ footer ul li:hover {
     background: white url('https://i.ibb.co/FxzBYR9/night.png');
     background-repeat: no-repeat;
     background-position: center;
-  }
-  
-  input:checked + .slider {
+}
+input:checked + .slider {
     background-color: #2196f3;
-  }
-  
-  input:focus + .slider {
+}
+input:focus + .slider {
     box-shadow: 0 0 1px #2196f3;
-  }
-  
-  input:checked + .slider:before {
+}
+input:checked + .slider:before {
     -webkit-transform: translateX(24px);
     -ms-transform: translateX(24px);
     transform: translateX(24px);
     background: white url('https://i.ibb.co/7JfqXxB/sunny.png');
     background-repeat: no-repeat;
     background-position: center;
-  }
+}
   
   /* Rounded sliders */
-  .slider.round {
+.slider.round {
     border-radius: 34px;
-  }
-  
-  .slider.round:before {
+}
+.slider.round:before {
     border-radius: 50%;
-  }
- 
- .dAvsnitt {
+}
+.dAvsnitt {
     background-repeat:no-repeat;
     background-size: cover;
     background-position: center;
     text-shadow: 1px 1px 1px var(--shadow-color);
-}
- 
+} 
 
-/* if page goes below 600px change to these settings */
-  @media screen and (max-width: 600px) {   
-    .innerdiv {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .innerdiv2 {
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-    }
-    .vansterdiv {
-        text-align: left;
-        width: 100%;
-        margin: 0px;
-    }
-    .hogerdiv {
-        text-align: left;
-        width: 100%;
-        margin: 0px;
-    }
-
-  }
-
-  @media screen and (max-width: 900px) {
-    nav {
+/* if page goes below 900px change to these settings */
+@media screen and (max-width: 900px) {
+nav {
         display: flex;
         flex-direction: column;
         height: 150px;
-        
-    }
-    nav ul li {
+}
+nav ul li {
         float: none;
         margin: 0px;
         text-align: left;
-    }
-
-    .flex-container {
+}
+.flex-container {
         flex-direction: column;
         align-items: center;
-      }
-    .playing {
+}
+.playing {
         display: none;
-    }
-    ul {
+}
+ul {
         margin-right: 0px;
-    }  
-    .navright {
+}  
+.navright {
         display: flex;
         margin-left: 0px;
-    }
-    footer {
+}
+footer {
         text-align: left;
-    }
-  }
+}
+}
+
+/* if page goes below 600px change to these settings */
+@media screen and (max-width: 600px) {   
+.innerdiv {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+}
+.innerdiv2 {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+}
+.vansterdiv {
+        text-align: left;
+        width: 100%;
+        margin: 0px;
+}
+.hogerdiv {
+        text-align: left;
+        width: 100%;
+        margin: 0px;
+}
+}
+
 
