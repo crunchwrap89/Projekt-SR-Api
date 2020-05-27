@@ -146,32 +146,65 @@ footer ul li:hover {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  .flex-container > div {
+.flex-container > div {
     width: 230px;
     height: 200px;
     margin: 25px;
 
-  }
-  .flex-container2 {
+}
+.flex-container2 {
     display: flex;
     flex-wrap: wrap;
     margin: 25px;
     
-  }
-  
-  .flex-container2 > div {
+}
+.flex-container2 > div {
     width: 230px;
     height: 200px;
     margin: 25px;
-  }
-  .playbtn {
+}
+.flex-containerAbout {
+    display: flex;
+    flex-wrap: wrap;  
+}
+.profilbild1 {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 25px;
+}
+.profilbild2 {
+    display: flex;
+    align-items: center;
+    width: 330px;
+    margin: 25px;
+}
+.profilbild3 {
+    display: flex;
+    align-items: center;
+    width: 400px;
+    margin: 25px;
+}
+.andersPb {
+    max-width:80%;
+    margin: 15px;
+}
+.marcusPb {
+    max-width:80%;
+    margin: 15px;
+}
+.erikPb {
+    max-width:80%;
+    margin: 15px;
+}
+.playbtn {
       height: 100%;
       width: 100%;
       opacity: 0.0;
-  }
-  .playbtn:hover {
+}
+.playbtn:hover {
     cursor: pointer;
     opacity: 0.9;
     transition: 0.2s;
