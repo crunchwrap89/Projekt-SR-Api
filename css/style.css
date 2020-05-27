@@ -206,10 +206,10 @@ footer ul li:hover {
     margin: 15px;
 }
 .erikPb:hover {
-    transform: scale(2);
+    transform: scale(2.1);
 }
 .marcusPb:hover {
-    transform: scale(1.6);
+    transform: scale(1.7);
 }
 .andersPb:hover {
     transform: scale(1.8);
