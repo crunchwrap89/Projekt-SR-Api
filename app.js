@@ -4,12 +4,10 @@ import router from './router/index.js'
 
 Vue.component('toast', EventError)
 
-let app = new Vue({
+new Vue({
     el: '#app',
-    data: {
-      message: 'Välj en radiokanal!'
-    },
-    router
+    router,
+    EventError
   });
 
   

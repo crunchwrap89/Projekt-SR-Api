@@ -44,14 +44,12 @@ nav ul li {
     float: left;
     margin: 10px;
 }
-nav a:hover,
-nav a.router-link-active,
-nav a.router-link-exact-active {
+nav a:hover {
     cursor: pointer;
     transition: 0.3s;
     color: #85DCBA;
 }
-nav a.col.exact-active.active {
+nav a.exact-active {
     color: #85DCBA;
 }
 nav .playing {
