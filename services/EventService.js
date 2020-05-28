@@ -10,16 +10,6 @@ function getData(input) {
         .then(json => json)
 }
 
-function getSongList(input) {
-    return fetch(input + dateString() + '&format=json')
-        .then(resp =>  {
-            if (!resp.ok) {
-                throw new Error(resp.statusText)
-            }
-            return resp.json()
-        })
-        .then(json => json.songlist.song[1])
-}
 // Hämtar API:t för p1, p2, p3 eller p4 med hjälp av getData beroende på vad man skriver in för siffra.
 export default {
     play(channel) {
