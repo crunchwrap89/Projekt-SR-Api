@@ -13,7 +13,7 @@ export default {
         // Metoden hämtar p3 Dokumentär med hjälp av metoden getDocumentaries i EventService.
         // Metoden skriver sedan ut en lista på de 10 senaste avsnitten och lägger till dem på sidan. Metoden lägger även till 
         // en klickfunktion för varje element som spelar upp respektive avsnitt och byter ut bilden i "spelas nu"
-            let roffel = document.getElementById('kuk')
+            let docu = document.getElementById('docu')
             let d = EventService.getDocumentaries()
             let img = document.getElementById("nuspelas")
             let l = document.getElementById('ljudspelare')
@@ -28,7 +28,7 @@ export default {
 
                       } );
                       div.className="dAvsnitt"
-                    roffel.appendChild(div)
+                    docu.appendChild(div)
                     div.style.backgroundImage="url(" + result.episodes[i].imageurl + ")"
                     
                 }
@@ -41,7 +41,7 @@ export default {
 `<div class="outerdiv">
      <div class="innerdiv">
      <h1> P3 Dokumentär avsnitt </h1>
-        <div class="flex-container" id="kuk">
+        <div class="flex-container" id="docu">
         </div>
      </div>
  </div>` 
