@@ -109,6 +109,9 @@ h1 {
     width: 50%;
     margin-left: 50px;
 }
+.espace {
+    height: 10em;
+}
 
 /* audioplayer */
 audio {
@@ -184,7 +187,7 @@ footer ul li:hover {
     margin: 25px;
 }
 .andersPb {
-    max-width:80%;
+    max-width:70%;
     transition: transform .5s ease;
     margin: 15px;
 }

@@ -5,7 +5,7 @@ export default { template: `<div class="outerdiv">
                                 <div class="flex-containerAbout">
                                   <div class="profilbild1">Erik Blixt-Dackhammar<img class="erikPb" src="../images/erik.jpg"></div>
                                   <div class="profilbild2">Marcus Nilsson<img class="marcusPb" src="../images/mac.jpg"></div>
-                                  <div class="profilbild3">Anders Ivansson<img class="andersPb" src="../images/anders2.jpeg" alt="zoom"></div> 
+                                  <div class="profilbild3">Anders Ivansson<img class="andersPb" src="../images/anders3.jpg"></div> 
                                 </div>
                               </div>
                               <div class="hogerdiv">
