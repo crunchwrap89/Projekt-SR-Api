@@ -43,6 +43,7 @@ nav a {
 nav ul li {
     float: left;
     margin: 10px;
+    list-style: none outside none;
 }
 nav a:hover {
     cursor: pointer;
