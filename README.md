@@ -1,4 +1,4 @@
-# Projekt-SR-Api
+# Vue.js.Website.SR-Api
 
 
 This is a Vue.js application that uses Sveriges Radio's open API (version 2) to stream live radio, fetch images, podcasts and archived news in audio format.
